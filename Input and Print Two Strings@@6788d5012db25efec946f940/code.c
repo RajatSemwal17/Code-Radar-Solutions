@@ -4,9 +4,7 @@
 int main() {
     char string[100];
     char string2[100];
-    fgets(string,sizeof(string),stdin);
-    fgets(string2,sizeof(string2),stdin);
-    string[strcspn(string,"\n")] = '\0';
+    scanf("%s  %s",string,string2);
     printf("You entered: %s and %s",string1,string2);
     return 0;
 }
