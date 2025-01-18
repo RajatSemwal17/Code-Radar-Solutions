@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char* welcome(int a,int b) {
+int welcome(int a,int b) {
     return a+b;
 }
 
