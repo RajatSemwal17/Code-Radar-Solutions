@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int greatest(int a,b,c) {
+int greatest(int a,int b,int c) {
    if(a>b && a>c){
     return "a";
    }
