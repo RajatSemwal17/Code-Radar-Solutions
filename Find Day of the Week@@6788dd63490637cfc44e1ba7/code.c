@@ -6,22 +6,22 @@ int main() {
     if(num==1){
         printf("Monday");
     }
-    if(num==2){
+    else if(num==2){
         printf("Tuesday");
     }
-    if(num==3){
+    else if(num==3){
         printf("Wednesday");
     }
-    if(num==4){
+    else if(num==4){
         printf("Thursday");
     }
-    if(num==5){
+    else if(num==5){
         printf("Friday");
     }
-    if(num==6){
+    else if(num==6){
         printf("Saturday");
     }
-    if(num==7){
+    else if(num==7){
         printf("Sunday");
     }
     else{
