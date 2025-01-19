@@ -4,19 +4,19 @@ int main() {
     int marks;
     char grade;
     if(marks>=90){
-        grade = "A";
+        grade = 'A';
     }
     else if(marks>=80 && marks<90){
-        grade="B";
+        grade='B';
     }
     else if(marks>=70 && marks<80){
-        grade="C";
+        grade='C';
     }
     else if(marks >=60 && marks<70){
-        grade="D";
+        grade='D';
     }
     else{
-        grade="F";
+        grade='F';
     }
     printf("%c",grade);
     return 0;
