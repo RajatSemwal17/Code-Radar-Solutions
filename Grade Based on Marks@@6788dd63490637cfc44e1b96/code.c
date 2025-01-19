@@ -2,6 +2,7 @@
 
 int main() {
     int marks;
+    char grade;
     if(marks>=90){
         grade = "A";
     }
