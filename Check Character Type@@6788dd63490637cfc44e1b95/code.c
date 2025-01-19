@@ -3,8 +3,13 @@
 int main() {
     char c;
     scanf("%c",&c);
-    if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
-        printf("Vowel");
+    if(c>='a' && c<='z' || c>='A' && c<='Z'){
+        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
+            printf("Vowel");
+        }
+        else{
+            printf("Consonant");
+        }
     }
     else if(c>=0 && c<=9){
         printf("Digit");
@@ -13,7 +18,7 @@ int main() {
         printf("Special Character");
     }
     else{
-        printf("Consonant");
+        printf("");
     }
 
     return 0;
