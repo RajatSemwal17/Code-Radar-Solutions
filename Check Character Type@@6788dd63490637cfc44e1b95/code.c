@@ -14,11 +14,8 @@ int main() {
     else if(c>=0 && c<=9){
         printf("Digit");
     }
-    else if(c==' '){
-        printf("Special Character");
-    }
     else{
-        printf("");
+        printf("Special Character");
     }
 
     return 0;
