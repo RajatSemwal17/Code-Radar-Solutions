@@ -7,7 +7,7 @@ int main() {
         printf("Valid");
     }
     else{
-        print("'Invalid");
+        printf("'Invalid");
     }
     return 0;
 }
