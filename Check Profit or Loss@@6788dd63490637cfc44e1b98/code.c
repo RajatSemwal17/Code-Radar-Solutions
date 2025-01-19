@@ -3,7 +3,7 @@
 int main() {
     int profit , loss;
     scanf("%d %d",&profit,&loss);
-    if(printf>loss){
+    if(profit>loss){
         printf("Profit");
     }
     else if(loss>profit){
