@@ -7,7 +7,7 @@ int main() {
         printf("Freezing");
     }
     else{
-        printf("")
+        printf("");
     }
     return 0;
 }
