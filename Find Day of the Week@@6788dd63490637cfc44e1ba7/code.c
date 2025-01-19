@@ -19,7 +19,7 @@ int main() {
         printf("Friday");
     }
     if(num==6){
-        printf("Satuurday");
+        printf("Saturday");
     }
     if(num==7){
         printf("Sunday");
