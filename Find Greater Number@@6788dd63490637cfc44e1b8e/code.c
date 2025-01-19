@@ -9,8 +9,5 @@ int main() {
     else if(b<a){
         printf("%d",b);
     }
-    else{
-        printf("Error!");
-    }
     return 0;
 }
