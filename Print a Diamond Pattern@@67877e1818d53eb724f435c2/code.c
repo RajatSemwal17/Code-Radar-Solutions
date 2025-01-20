@@ -2,8 +2,9 @@
 int main(){
     int n;
     scanf("%d",&n);
+
     for(int rows=0;rows<=2*n-1;rows++){
-        int total = rows<n?rows:2*n-rows;
+        int total = rows < n ? rows + 1 : 2 * n - rows - 1;
         int space = n-total;
         for(int i=0;i<space;i++){
             printf(" ");
