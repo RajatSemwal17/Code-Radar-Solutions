@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int n,num;
+    int n;
     scanf("%d",&n);
-    for(int rows=1;rows<=n;rows++){
-        for(int cols=1;cols<=rows;cols++){
-            printf("%d ",num);
-            num--;
+    for(int rows=0;rows<n;rows++){
+        for(int cols=0;cols<=rows;cols++){
+            printf("%d ",rows==0?1:cols);
         }
         printf("\n");
     }
