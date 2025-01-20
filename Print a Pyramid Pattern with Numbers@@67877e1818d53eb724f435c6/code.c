@@ -11,7 +11,7 @@ int main() {
         for(int cols=0;cols<=rows;cols++){
             printf("%d ",cols+1);
         }
-        printf("\n");
     }
+        printf("\n");
     return 0;
 }
