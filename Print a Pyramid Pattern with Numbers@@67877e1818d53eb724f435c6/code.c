@@ -8,8 +8,8 @@ int main() {
         // for(int i=0;i<space;i++){
         //     printf(" ");
         // }
-        for(int cols;cols<rows;cols++){
-            printf("%d ",cols);
+        for(int cols;cols<=rows;cols++){
+            printf("%d ",cols+1);
         }
     }
     return 0;
