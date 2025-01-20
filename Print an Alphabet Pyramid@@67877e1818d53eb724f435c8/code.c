@@ -7,6 +7,7 @@ int main() {
         for(int cols=0;cols<=rows;cols++){
             printf("%C ",cols+'A');
         }
+        printf("\n");
     }
     return 0;
 }
