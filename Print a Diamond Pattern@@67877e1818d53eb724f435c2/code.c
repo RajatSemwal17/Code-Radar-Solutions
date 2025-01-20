@@ -2,13 +2,16 @@
 int main(){
     int n;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        for(int j=n-i; j>=1; j--){
+    for(int rows=0;rows<=2*n-1;rows++){
+        int total = rows<n?rows:2*n-rows;
+        int space = n-total;
+        for(int i=0;i<space;i++){
             printf(" ");
         }
-        for(int j=1; j<=i; j++){
+        for(int cols=1; cols<2*total-1; cols++){
             printf("*");
         }
+        printf("\n");
     }
     return 0;
 }
