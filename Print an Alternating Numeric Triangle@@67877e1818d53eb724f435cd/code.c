@@ -6,7 +6,7 @@ int main() {
     int num;
     for(int rows=0;rows<n;rows++){
         for(int cols=0;cols<=rows;cols++){
-            printf("%d ",num);
+            printf("%d ",num+1);
             num--;
         }
         printf("\n");
