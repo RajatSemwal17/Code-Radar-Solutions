@@ -8,7 +8,7 @@ int main(){
         for(int i=0;i<space;i++){
             printf(" ");
         }
-        for(int cols=1; cols<2*total-1; cols++){
+        for(int cols=0; cols<2*total-1; cols++){
             printf("*");
         }
         printf("\n");
