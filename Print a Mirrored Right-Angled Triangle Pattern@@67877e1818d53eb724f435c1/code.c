@@ -8,7 +8,7 @@ int main() {
         //     printf(" ");
         // }
         for(int cols=0;cols<=rows;cols++){
-            printf("*");
+            printf(" *");
         }
         printf("\n");
     }
