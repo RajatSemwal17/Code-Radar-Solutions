@@ -21,7 +21,6 @@ char grade(float marks){
 
 int main() {
     int n;
-    char grade;
     scanf("%d",&n);
     struct Students e[n];
     for(int i=0;i<n;i++){
