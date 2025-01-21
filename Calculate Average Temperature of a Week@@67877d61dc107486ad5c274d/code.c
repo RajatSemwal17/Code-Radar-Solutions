@@ -12,9 +12,9 @@ int main() {
     for(int i=0;i<7;i++){
         scanf("%d",e[i].days);
 
-        temp+=e[i].tempp;
+        temp += e[i].tempp;
     }
-    average = temp/7.0;
+    average = temp/7;
     printf("Average Temperature: %.2f",average);
     return 0;
 }
