@@ -8,7 +8,7 @@ struct info{
 
 int main() {
     int n;
-    int count
+    int count;
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
