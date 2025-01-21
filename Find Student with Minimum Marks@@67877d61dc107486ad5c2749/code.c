@@ -16,7 +16,7 @@ int main() {
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     }
     for(int i=0;i<n;i++){
-        if(e[i].marks<minMarks){
+        if(e[i].marks<e[minMarks].marks){
             minMarks=i;
         }
     }
