@@ -2,6 +2,7 @@
 
 struct week{
     int days;
+    int tempp;
 };
 
 int main() {
@@ -10,8 +11,9 @@ int main() {
     for(int i=0;i<7;i++){
         scanf("%d",e[i].days);
 
-        average = (e[i].m+e[i].t)/7.0;
+        temp+=e[i].tempp
     }
+    average = temp/7.0;
     printf("Average Temperature: %.2f",average);
     return 0;
 }
