@@ -10,7 +10,7 @@ char grade(float marks){
     if(marks>=85){
         return 'A';
     }
-    else if(marks<70 && marks<85){
+    else if(marks<70){
         return 'B';
     }
     else{
