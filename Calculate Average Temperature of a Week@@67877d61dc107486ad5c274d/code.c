@@ -7,20 +7,22 @@ struct week{
 int main() {
     struct week e[7];
     for(int i=0;i<7;i++){
-        printf("Monday ");
+        // printf("Monday ");
         scanf("%d",&e[i].m);
-        printf("Tuesday ");
+        // printf("Tuesday ");
         scanf("%d",&e[i].t);
-        printf("Wednesday ");
+        // printf("Wednesday ");
         scanf("%d",&e[i].w);
-        printf("Thursday ");
+        // printf("Thursday ");
         scanf("%d",&e[i].th);
-        printf("Friday ");
+        // printf("Friday ");
         scanf("%d",&e[i].f);
-        printf("Saturday ");
+        // printf("Saturday ");
         scanf("%d",&e[i].sa);
-        printf("Sunday ");
+        // printf("Sunday ");
         scanf("%d",&e[i].s);
+
+        average+=e[i].
     }
     return 0;
 }
