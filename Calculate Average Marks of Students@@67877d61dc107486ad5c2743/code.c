@@ -12,12 +12,10 @@ int main() {
     struct info e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].number,e[i].name,&e[i].marks);
-    }
-    for(int i=0;i<n;i++){
-        int sum = 0
         sum += e[i].marks;
-        printf("%f",sum);
     }
+    avg = sum/n;
+    printf("%.2f",avg);
 
     return 0;
 }
