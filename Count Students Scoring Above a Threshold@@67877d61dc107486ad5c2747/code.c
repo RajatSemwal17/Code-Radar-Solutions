@@ -19,6 +19,7 @@ int main() {
         if(maxMarks > e[i].marks){
             printf("Count of students scoring above %.2f: %d",maxMarks,count);
             count++;
+            break;
         }
     }
     return 0;
