@@ -20,6 +20,6 @@ int main() {
             minMarks=i;
         }
     }
-            printf("%f",e[i].marks);
+            printf("%f",e[minMarks].marks);
     return 0;
 }
