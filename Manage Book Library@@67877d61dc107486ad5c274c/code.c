@@ -9,7 +9,7 @@ struct library{
 int main() {
     int n;
     float maxPrice;
-    int correct=1;
+    int correct=0;
     scanf("%d",&n);
     struct library e[n];
     for(int i=0;i<n;i++){
@@ -17,7 +17,7 @@ int main() {
 
         scanf("%f",&maxPrice);
         if(e[i].price > maxPrice){
-            correct=0;
+            correct=1;
         }
     }
     for(int i=0;i<n;i++){
