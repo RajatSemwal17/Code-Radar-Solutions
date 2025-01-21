@@ -22,7 +22,8 @@ int main() {
         // printf("Sunday ");
         scanf("%d",&e[i].s);
 
-        // average+=e[i].
+        float average = (m+t+w+th+f+sa+s)/7;
     }
+    printf("Average Temperature: %.2f",average);
     return 0;
 }
