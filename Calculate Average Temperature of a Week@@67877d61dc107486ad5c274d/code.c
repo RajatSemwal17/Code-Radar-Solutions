@@ -7,6 +7,7 @@ struct week{
 
 int main() {
     struct week e[7];
+    int temp=0;
     float average;
     for(int i=0;i<7;i++){
         scanf("%d",e[i].days);
