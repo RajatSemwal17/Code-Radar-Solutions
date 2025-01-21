@@ -3,7 +3,7 @@
 struct library{
     char Book[20];
     char Author[20];
-    int price;
+    float price;
 };
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
         }
     }
     if(correct){
-        printf("yes");
+        printf("Books above price %.2f: Title: %s, Author: %s, Price: %.2f");
     }
     return 0;
 }
