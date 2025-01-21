@@ -13,7 +13,7 @@ void Descending(struct info *a,struct info *b){
 }
 
 int main() {
-    int n,maxMarks;
+    int n;
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
@@ -27,7 +27,7 @@ int main() {
         }
     }
     for(int i=0;i<n;i++){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",e[maxMarks].rollno,e[maxMarks].name,e[maxMarks].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",e[i].rollno,e[i].name,e[i].marks);
     }
     return 0;
 }
