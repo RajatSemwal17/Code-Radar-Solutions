@@ -6,6 +6,12 @@ struct info{
     float marks;
 };
 
+void Descending(struct info *a,struct info *b){
+    struct info temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
 int main() {
     int n,maxMarks;
     scanf("%d",&n);
@@ -14,10 +20,14 @@ int main() {
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     }
     for(int i=0;i<n;i++){
-        if(e[i].marks>e[maxMarks].marks){
-
-        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",e[maxMarks].rollno,e[maxMarks].name,e[maxMarks].marks);
+        for(int j=0;j<n;j++){
+            if(e[j].marks<e[j+1].marks){
+                Descending(&e[j],&e[j+1]);
+            }
         }
+    }
+    for(int i=0;i<n;i++){
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",e[maxMarks].rollno,e[maxMarks].name,e[maxMarks].marks);
     }
     return 0;
 }
