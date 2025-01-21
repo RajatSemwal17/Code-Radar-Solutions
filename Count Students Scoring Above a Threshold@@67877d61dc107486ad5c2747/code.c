@@ -17,10 +17,9 @@ int main() {
     scanf("%f",&maxMarks);
     for(int i=0;i<n;i++){
         if(e[i].marks > maxMarks){
-            printf("Count of students scoring above %.2f: %d",maxMarks,count);
             count++;
-            break;
         }
     }
+    printf("Count of students scoring above %.2f: %d",maxMarks,count);
     return 0;
 }
