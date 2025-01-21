@@ -2,7 +2,7 @@
 
 struct week{
     int days;
-    int tempp;
+    float tempp;
 };
 
 int main() {
