@@ -2,7 +2,7 @@
 
 struct information{
     int rollNo;
-    int name;
+    char name[100];
     float marks;
 }
 
