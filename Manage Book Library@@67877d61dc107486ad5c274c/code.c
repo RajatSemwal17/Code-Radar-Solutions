@@ -17,12 +17,12 @@ int main() {
 
         scanf("%f",&maxPrice);
         if(e[i].price > maxPrice){
-            correct=1;
+            // correct=1;
+        printf("Books above price %.2f:\nTitle: %s, Author: %s, Price: %.2f\n",maxPrice,e[i].Book,e[i].Author,e[i].price);
         }
     }
-    for(int i=0;i<n;i++){
-    if(correct){
-        printf("Books above price %.2f:\nTitle: %s, Author: %s, Price: %.2f\n",maxPrice,e[i].Book,e[i].Author,e[i].price);
-    }}
+    // for(int i=0;i<n;i++){
+    // if(correct){
+    // }}
     return 0;
 }
