@@ -7,7 +7,8 @@ struct info{
 };
 
 int main() {
-    int n,sum=0;
+    int n;
+    float sum=0;
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
@@ -15,7 +16,7 @@ int main() {
         sum += e[i].marks;
     }
     float avg = sum/n;
-    printf("%.2f",avg);
+    printf("Average Marks: %.2f",avg);
 
     return 0;
 }
