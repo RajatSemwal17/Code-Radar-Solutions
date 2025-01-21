@@ -13,7 +13,11 @@ int main() {
 
     for(int i=1;i<=n;i++){
     scanf("%d %s %f",&(e1[i].rollNo),e1[i].name,&(e1[i].marks));
+    }
+
+    for(int i=1;i<=n;i++){
     printf("Roll Number: %d, Name: %s, Marks: %f",e1.rollNo,e1.name,e1.marks);
+
     }
     return 0;
 }
