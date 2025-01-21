@@ -8,20 +8,25 @@ struct Students{
 
 int main() {
     int n;
+    char grade;
     scanf("%d",&n);
     struct Students e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     
     if(e[i].marks>=85){
-        printf("A");
+        grade = 'A';
     }
     else if(e[i].marks>=70 && e[i].marks<=84){
-        printf("B");
+        grade = 'B';
     }
     else if(e[i].marks<=70){
-        printf("C");
+        grade = 'C';
     }
+    }
+
+    for(int i=0;i<n;i++){
+        printf("Roll Number: %d, Name: %s, Grade: %f",e[i].rollno,e[i].name,grade);
     }
     return 0;
 }
