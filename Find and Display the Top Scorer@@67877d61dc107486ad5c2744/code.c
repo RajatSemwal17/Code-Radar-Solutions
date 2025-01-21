@@ -12,9 +12,9 @@ int main() {
     struct info e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&(e[i].rollno),e[i].name,&(e[i].marks));
-    }
     if(e[i].marks > e[topIndex].marks){
         topIndex = i;
+    }
     }
 
     printf("Top Scorer: Roll Number: %d,Name: %s,Marks: %.2f",e[i].rollno,e[i].name,e[i].marks);
