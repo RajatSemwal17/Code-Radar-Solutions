@@ -14,7 +14,9 @@ int main() {
         scanf("%d %s %f",&e[i].number,e[i].name,&e[i].marks);
     }
     for(int i=0;i<n;i++){
-        printf("%f",e[i].marks);
+        int sum = 0
+        sum += e[i].marks;
+        printf("%f",sum);
     }
 
     return 0;
