@@ -13,6 +13,7 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     }
+    scanf("%d",&searchRollNo);
     for(int i=0;i<n;i++){
         if(e[i].rollno == searchRollNo){
             printf("Roll Number: %d, Name: %s, Marks: %.2f",e[i].rollno,e[i].name,e[i].marks);
