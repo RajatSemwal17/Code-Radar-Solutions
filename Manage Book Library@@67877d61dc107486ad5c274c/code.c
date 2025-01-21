@@ -13,7 +13,7 @@ int main() {
     scanf("%d",&n);
     struct library e[n];
     for(int i=0;i<n;i++){
-        scanf("%s %s %d",e[i].Book,e[i].Author,&e[i].price);
+        scanf("%s %s %f",e[i].Book,e[i].Author,&e[i].price);
 
         scanf("%f",&maxPrice);
         if(e[i].price > maxPrice){
@@ -22,7 +22,7 @@ int main() {
     }
     for(int i=0;i<n;i++){
     if(correct){
-        printf("Books above price %.2f:\nTitle: %s, Author: %s, Price: %.2f",maxPrice,e[i].Book,e[i].Author,e[i].price);
+        printf("Books above price %.2f:\nTitle: %s, Author: %s, Price: %.2f\n",maxPrice,e[i].Book,e[i].Author,e[i].price);
     }}
     return 0;
 }
