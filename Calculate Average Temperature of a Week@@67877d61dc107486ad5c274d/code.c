@@ -10,7 +10,7 @@ int main() {
     float temp=0;
     float average;
     for(int i=0;i<7;i++){
-        scanf("%d",e[i].days);
+        scanf("%d",e[i].temp);
 
         temp += e[i].tempp;
     }
