@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 struct info{
-    int rollno,topIndex=0;
+    int rollno;
     char name[100];
     float marks;
 };
 
 int main() {
-    int n;
+    int n,topIndex=0;
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
