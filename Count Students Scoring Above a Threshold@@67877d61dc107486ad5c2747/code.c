@@ -10,7 +10,7 @@ int main() {
     int n , count=0;
     float maxMarks;
     scanf("%d",&n);
-    struct info e;
+    struct info e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     }
