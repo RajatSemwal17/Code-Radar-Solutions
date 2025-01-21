@@ -9,7 +9,7 @@ struct information{
 int main() {
     int n;
     scanf("%d",&n);
-    struct information e1;
+    struct information e1[n];
 
     for(int i=1;i<=n;i++){
     scanf("%d %s %f",&(e1[i].rollNo),e1[i].name,&(e1[i].marks));
