@@ -20,7 +20,7 @@ int main() {
     if(e[count].marks>50){
         printf("All Passed");
     }
-    else if e[count].marks<50{
+    else if (e[count].marks<50){
         printf("Not All Passed");
     }
     return 0;
