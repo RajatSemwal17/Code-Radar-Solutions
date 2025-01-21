@@ -21,7 +21,7 @@ int main() {
         }
     }
     for(int i=0;i<n;i++){
-    if(correct){
+    if(!correct){
         printf("Books above price %.2f:\nTitle: %s, Author: %s, Price: %.2f\n",maxPrice,e[i].Book,e[i].Author,e[i].price);
     }}
     return 0;
