@@ -8,19 +8,19 @@ struct info{
 
 int main() {
     int n;
-    int count;
+    int passed=1;
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
-     
-        count = i;
+        if(e[i].marks<50)
+        passed=0;
     }
         
-    if(e[count].marks>50){
+    if(passed){
         printf("All Passed");
     }
-    else if (e[count].marks<50){
+    else{
         printf("Not All Passed");
     }
     return 0;
