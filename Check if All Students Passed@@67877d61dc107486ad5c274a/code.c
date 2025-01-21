@@ -13,6 +13,11 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     }
-    printf("All Passed");
+    if(e[i].marks>50){
+        printf("All Passed");
+    }
+    else{
+        printf("Not All Passed");
+    }
     return 0;
 }
