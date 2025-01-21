@@ -10,7 +10,7 @@ int main() {
     float temp=0;
     float average;
     for(int i=0;i<7;i++){
-        scanf("%d",e[i].temp);
+        scanf("%d",e[i].tempp);
 
         temp += e[i].tempp;
     }
