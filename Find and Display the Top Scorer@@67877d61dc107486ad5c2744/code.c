@@ -4,7 +4,7 @@ struct info{
     int rollno;
     char name[100];
     float marks;
-}
+};
 
 int main() {
     int n;
