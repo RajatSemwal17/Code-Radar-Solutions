@@ -14,11 +14,11 @@ int main() {
     struct info e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
+        
+    if(e[i].marks < e[minMarks].marks){
+        minMarks=i;
     }
-    for(int i=0;i<n;i++){
-        if(e[i].marks < e[minMarks].marks){
-            minMarks=i;
-        }
+        
     }
             printf("%f",e[minMarks].marks);
     return 0;
