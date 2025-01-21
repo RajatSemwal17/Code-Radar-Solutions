@@ -19,7 +19,6 @@ int main() {
         
     if(e[count].marks>50){
         printf("All Passed");
-        break;
     }
     else{
         printf("Not All Passed");
