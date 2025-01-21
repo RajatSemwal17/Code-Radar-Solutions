@@ -2,7 +2,7 @@
 
 struct week{
     int m,t,w,th,f,sa,s;
-}
+};
 
 int main() {
     struct week e[7];
