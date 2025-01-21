@@ -7,15 +7,23 @@ struct info{
 };
 
 int main() {
-    int n;
+    int n , searchRollNo , found =0 ;
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
-
     }
     for(int i=0;i<n;i++){
-        printf("Roll Number: %d, Name: %s, Marks: %.2f",e[i].rollno,e[i].name,e[i].marks);
+        if(e[i].rollno == searchRollNo){
+            printf("Roll Number: %d, Name: %s, Marks: %.2f",e[i].rollno,e[i].name,e[i].marks);
+
+            found=1;
+            break;
     }
-    return 0;
+
+    }
+    if(!found){
+        printf("Student not found");
+    }
+        return 0;
 }
