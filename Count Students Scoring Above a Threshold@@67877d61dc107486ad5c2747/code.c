@@ -12,7 +12,7 @@ int main() {
     scanf("%d",&n);
     struct info e;
     for(int i=0;i<n;i++){
-        scanf("%d %s %f",&e[i].rollno;e[i].name,&e[i].marks);
+        scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
     }
     scanf("%f",&maxMarks);
     for(int i=0=;i<n;i++){
