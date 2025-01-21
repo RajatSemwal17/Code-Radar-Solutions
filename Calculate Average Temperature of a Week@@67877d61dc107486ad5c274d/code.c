@@ -5,7 +5,7 @@ struct week{
 }
 
 int main() {
-    struct week e;
+    struct week e[7];
     for(int i=0;i<7;i++){
         printf("Monday ");
         scanf("%d",&e[i].m);
