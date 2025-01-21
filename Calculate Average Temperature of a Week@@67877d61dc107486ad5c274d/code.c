@@ -6,6 +6,7 @@ struct week{
 
 int main() {
     struct week e[7];
+    float average;
     for(int i=0;i<7;i++){
         // printf("Monday ");
         scanf("%d",&e[i].m);
@@ -22,7 +23,7 @@ int main() {
         // printf("Sunday ");
         scanf("%d",&e[i].s);
 
-        float average = (e[i].m+e[i].t)/7;
+         average = (e[i].m+e[i].t)/7;
     }
     printf("Average Temperature: %.2f",average);
     return 0;
