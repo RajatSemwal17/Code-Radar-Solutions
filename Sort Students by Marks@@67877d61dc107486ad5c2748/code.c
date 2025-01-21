@@ -3,7 +3,7 @@
 struct info{
     int rollno;
     char name[40];
-    float marks;
+    // float marks;
 };
 
 void Descending(struct info *a,struct info *b){
