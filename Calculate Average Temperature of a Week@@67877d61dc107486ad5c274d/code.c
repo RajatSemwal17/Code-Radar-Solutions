@@ -22,7 +22,7 @@ int main() {
         // printf("Sunday ");
         scanf("%d",&e[i].s);
 
-        average+=e[i].
+        // average+=e[i].
     }
     return 0;
 }
