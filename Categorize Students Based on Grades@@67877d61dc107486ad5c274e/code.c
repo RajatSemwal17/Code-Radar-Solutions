@@ -12,7 +12,7 @@ int main() {
     struct Students e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
-    }
+    
     if(e[i].marks>=85){
         printf("A");
     }
@@ -21,6 +21,7 @@ int main() {
     }
     else if(e[i].marks<=70){
         printf("C");
+    }
     }
     return 0;
 }
