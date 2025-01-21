@@ -14,7 +14,7 @@ int main() {
         scanf("%d %s %f",&e[i].number,e[i].name,&e[i].marks);
         sum += e[i].marks;
     }
-    avg = sum/n;
+    float avg = sum/n;
     printf("%.2f",avg);
 
     return 0;
