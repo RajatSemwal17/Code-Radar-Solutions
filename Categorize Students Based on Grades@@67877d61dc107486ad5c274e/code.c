@@ -6,6 +6,19 @@ struct Students{
     float marks;
 };
 
+char grade(float marks){
+    if(marks>=85){
+        return 'A';
+    }
+    else if(marks<70 && marks<85){
+        return 'B';
+    }
+    else{
+        return 'C';
+    }
+}
+
+
 int main() {
     int n;
     char grade;
@@ -13,20 +26,10 @@ int main() {
     struct Students e[n];
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].rollno,e[i].name,&e[i].marks);
-    
-    if(e[i].marks>=85){
-        grade = 'A';
-    }
-    else if(e[i].marks>=70 && e[i].marks<=84){
-        grade = 'B';
-    }
-    else if(e[i].marks<=70){
-        grade = 'C';
-    }
     }
 
     for(int i=0;i<n;i++){
-        printf("Roll Number: %d, Name: %s, Grade: %c\n",e[i].rollno,e[i].name,grade);
+        printf("Roll Number: %d, Name: %s, Grade: %c\n",e[i].rollno,e[i].name,grade(e[i].marks));
     }
     return 0;
 }
