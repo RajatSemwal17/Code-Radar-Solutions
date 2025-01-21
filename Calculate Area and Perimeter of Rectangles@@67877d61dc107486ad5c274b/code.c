@@ -14,8 +14,8 @@ int main() {
     }
 
     for(int i=0;i<n;i++){
-        Area = e[i].length * e[i].breadth;
-        Perimeter = 2*(e[i].length + e[i].breadth);
+        float Area = e[i].length * e[i].breadth;
+        float Perimeter = 2*(e[i].length + e[i].breadth);
         printf("Rectangle %d: Area = %.2f, Perimeter = %.2f",i,Area,Perimeter);
     }
     return 0;
