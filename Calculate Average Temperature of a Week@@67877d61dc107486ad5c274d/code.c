@@ -1,14 +1,12 @@
 #include <stdio.h>
 
 struct week{
-    int days;
     int temp;
 };
 
 int main() {
     struct week e[7];
-    float totalTemp=0;
-    float average;
+    float totalTemp=0,average;
     for(int i=0;i<7;i++){
         scanf("%f",&e[i].temp);
 
