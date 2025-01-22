@@ -4,10 +4,10 @@
 
 
 int main() {
-    char input[100];
+    char str[100];
     int freq[26] = {0}, maxFreq=0;
     char maxChar;
-    fgets(input,sizeof(input),stdin);
+    fgets(str,sizeof(str),stdin);
 
     for(int i=0;i<str[i];i++){
         if(isalpha(str[i])){
