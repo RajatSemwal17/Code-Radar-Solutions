@@ -4,7 +4,7 @@
 int main() {
     char string[20];
     int vowel=0;
-    int len = strlen(string)
+    int len = strlen(string);
     scanf("%s",string);
     for(int i=0;i<len;i++){
         char c = string[i];
