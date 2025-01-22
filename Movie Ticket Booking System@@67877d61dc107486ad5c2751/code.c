@@ -20,8 +20,8 @@ int main() {
         else if(strcmp(e[i].Y,"Premium") == 0){
             premium += e[i].Z;
         }
-        else if(strcmp(e[i].Z,"VIP") == 0){
-            vip += e[i].X;
+        else if(strcmp(e[i].Y,"VIP") == 0){
+            vip += e[i].Z;
         }
     }
     printf("Standard: %.2f, Premium: %.2f, VIP: %.2f",standard,premium,vip)
