@@ -11,7 +11,7 @@ int main() {
     float standard=0.0 , premium=0.0 , vip=0.0;
     scanf("%d",&n);
     struct info e[n];
-    for(int i=0;i<n i++){
+    for(int i=0;i<n;i++){
         scanf("%s %s %f",e[i].X,e[i].Y,&e[i].Z);
 
         if(strcmp(e[i].Y,"Standard") == 0){
