@@ -14,7 +14,7 @@ int main() {
         scanf("%s %s %f",e[i].num,e[i].name,&e[i].price);
     }
     for(int i=0;i<n;i++){
-        printf("%s: %.2f, ",e[i].name,e[i].price);
+        printf("%ss: %.2f, ",e[i].name,e[i].price);
     }
     return 0;
 }
