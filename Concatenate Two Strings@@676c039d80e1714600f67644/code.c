@@ -8,7 +8,7 @@ int main() {
     fgets(str2,sizeof(str2),stdin);
     str2[strcspn(str2,"\n")] = '\0';
     strcat(str1,str2);
-    printf("%s%s",str1,str2);
+    printf("%s",str1);
 
     return 0;
 }
