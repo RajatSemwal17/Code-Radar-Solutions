@@ -15,7 +15,7 @@ int main() {
             freq[ch - 'a']++ ;
 
         if(freq[i]>maxFreq){
-            max = freq[ch-'a'];
+            maxFreq = freq[ch-'a'];
             maxChar = ch;
         }
         }
