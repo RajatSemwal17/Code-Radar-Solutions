@@ -15,12 +15,12 @@ int main() {
         scanf("%s %s %f",e[i].X,e[i].Y,&e[i].Z);
 
         if(strcmp(e[i].Y,"Standard") == 0){
-            standard += e[i].X;
+            standard += e[i].Z;
         }
         else if(strcmp(e[i].Y,"Premium") == 0){
-            premium += e[i].X;
+            premium += e[i].Z;
         }
-        else if(strcmp(e[i].Y,"VIP") == 0){
+        else if(strcmp(e[i].Z,"VIP") == 0){
             vip += e[i].X;
         }
     }
