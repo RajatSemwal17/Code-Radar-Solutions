@@ -3,7 +3,6 @@
 struct info{
     int X;
     char Y[30];
-    float salary;
     float bonus;
 };
 
