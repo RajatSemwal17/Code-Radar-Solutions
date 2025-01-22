@@ -6,6 +6,15 @@ struct info{
     float salary;
 };
 
+float Bonus(int salary){
+    if(salary<50000){
+        return salary/10;
+    }
+    else{
+        return salary/50;
+    }
+}
+
 int main() {
     int n;
     scanf("%d",&n);
@@ -13,8 +22,9 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].X,e[i].Y,&e[i].salary);
     }
+    float salary = Bonus(&e[i].salary);
     for(int i=0;i<n;i++){
-        printf("Employee ID: %d, Name: %s, Bonus: ",e[i].X,e[i].Y);
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",e[i].X,e[i].Y,salary);
     }
     return 0;
 }
