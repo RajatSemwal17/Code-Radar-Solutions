@@ -24,6 +24,6 @@ int main() {
             vip += e[i].Z;
         }
     }
-    printf("Standard: %.2f, Premium: %.2f, VIP: %.2f",standard,premium,vip)
+    printf("Standard: %.2f, Premium: %.2f, VIP: %.2f",standard,premium,vip);
     return 0;
 }
