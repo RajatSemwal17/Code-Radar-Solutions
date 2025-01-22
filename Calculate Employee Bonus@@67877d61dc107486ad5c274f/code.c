@@ -22,8 +22,8 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&e[i].X,e[i].Y,&e[i].salary);
     }
-    float salary = Bonus(&e[i].salary);
     for(int i=0;i<n;i++){
+    float salary = Bonus(&e[i].salary);
         printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",e[i].X,e[i].Y,salary);
     }
     return 0;
