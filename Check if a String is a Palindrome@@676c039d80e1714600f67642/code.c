@@ -14,7 +14,7 @@ void ReverseString(char str[]){
 int main() {
     char str[30];
     scanf("%s",str);
-    char name = ReverseString(str);
+    char name[] = ReverseString(str);
     if(str == name){
         printf("Yes");
     }
