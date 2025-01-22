@@ -4,7 +4,7 @@
 struct info{
     char X[30] , Y[30];
     float Z;
-}
+};
 
 int main() {
     int n;
