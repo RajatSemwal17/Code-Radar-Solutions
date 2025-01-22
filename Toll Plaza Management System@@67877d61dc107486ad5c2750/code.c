@@ -21,7 +21,7 @@ int main() {
         else if(strcmp(e[i].name,"Truck")==0){
             trucksToll += e[i].price;
         }
-        if(strcmp(e[i].name,"Bike")==0){
+        else if(strcmp(e[i].name,"Bike")==0){
             bikeTolls += e[i].price;
         }
     }
