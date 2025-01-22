@@ -12,9 +12,9 @@ int main() {
     for(int i=0;i<str[i];i++){
         if(isalpha(str[i])){
             char ch = tolower(str[i]);
-            freq[ch - 'a']++ ;
+            freq[ch - 'a']++;
 
-        if(freq[i]>maxFreq){
+        if(freq[ch-'a']>maxFreq){
             maxFreq = freq[ch-'a'];
             maxChar = ch;
         }
