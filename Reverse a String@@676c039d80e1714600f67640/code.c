@@ -6,8 +6,8 @@ void ReverseString(char str[]){
     char temp;
     for(int i=0;i<=len/2;i++){
         temp = str[i];
-        str[i] = str[n-i-1];
-        str[n-i-1] = temp;
+        str[i] = str[len-i-1];
+        str[len-i-1] = temp;
     }
 }
 
