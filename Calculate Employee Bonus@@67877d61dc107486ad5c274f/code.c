@@ -12,7 +12,7 @@ float Bonus(int salary){
         return salary/10;
     }
     else{
-        return salary/50;
+        return salary/20;
     }
 }
 
