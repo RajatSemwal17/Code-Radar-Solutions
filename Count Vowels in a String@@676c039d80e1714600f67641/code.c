@@ -8,7 +8,7 @@ int main() {
     int len = strlen(string);
     for(int i=0;i<len;i++){
         char c = string[i];
-        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
+        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u' || c=='A' || c=='E' || c=='I' || c=='O' || c=='U'){
             vowel++;
         }
     }
