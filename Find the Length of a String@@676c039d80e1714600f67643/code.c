@@ -5,6 +5,6 @@ int main() {
     char name[30];
     scanf("%s",name);
     int len = strlen(name);
-    printf("%d",len-1);
+    printf("%d",len);
     return 0;
 }
