@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 struct info{
-    int num;
+    char num[30];
     char name[30];
     float price;
 };
@@ -11,7 +11,7 @@ int main() {
     scanf("%d",&n);
     struct info e[n];
     for(int i=0;i<n;i++){
-        scanf("%d %s %f",&e[i].num,e[i].name,&e[i].price);
+        scanf("%s %s %f",e[i].num,e[i].name,&e[i].price);
     }
     for(int i=0;i<n;i++){
         printf("%s: %.2f",e[i].name,e[i].price);
