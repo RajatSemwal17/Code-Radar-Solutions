@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <STRING.h>
+#include <string.h>
 
 int main() {
     char name[30];
