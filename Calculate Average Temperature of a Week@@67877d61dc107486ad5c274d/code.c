@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 struct week{
-    int temp;
+    float temp;
 };
 
 int main() {
