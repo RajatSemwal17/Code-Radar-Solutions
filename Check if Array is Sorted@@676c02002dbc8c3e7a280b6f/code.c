@@ -2,21 +2,11 @@
 
 int sortArr(int arr[],int n){
     for(int i=0;i<n-1;i++){
-        for(int j=0;j<n-i-1;j++){
-            if(arr[j]>arr[j+1]){
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
+        if(arr[i]>arr[i+1]){
+            return 0;
         }
     }
     return 1;
-}
-
-int printArr(int arr[],int n){
-    for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
-    }
 }
 
 int main() {
@@ -27,7 +17,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int result = sortArr(arr,n);
-    if(result==0){
+    if(result){
         printf("Sorted");
     }
     else{
