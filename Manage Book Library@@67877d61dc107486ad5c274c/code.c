@@ -20,7 +20,7 @@ int main() {
             correct=i;
         }
     }
-    printf("Books above price %.2f",maxPrice);
+    printf("Books above price %.2f:\n",maxPrice);
     for(int i=0;i<n;i++){
         printf("Title: %s, Author: %s, Price: %.2f\n",e[correct].Book,e[correct].Author,e[correct].price);
     
