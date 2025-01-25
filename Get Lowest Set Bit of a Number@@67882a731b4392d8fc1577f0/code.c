@@ -5,6 +5,7 @@ int lowestSetinBit(int n){
 }
 
 int main() {
+    int n;
     scanf("%d",&n);
     printf("%d",lowestSetinBit(n));
     return 0;
