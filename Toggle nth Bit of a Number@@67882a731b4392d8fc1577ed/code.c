@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int toggleNthbit(int n, int m){
-    return 0;
+    return n ^ (1<<m);
 }
 int main() {
     int n,m;
