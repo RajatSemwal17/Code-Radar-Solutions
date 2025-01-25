@@ -10,6 +10,6 @@ int lowestSetinBit(int n){
 int main() {
     int n;
     scanf("%d",&n);
-    printf("%d",lowestSetinBit(n));
+    printf("%d",lowestSetinBit(n)-1);
     return 0;
 }
