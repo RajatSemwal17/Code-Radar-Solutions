@@ -4,7 +4,7 @@ void secondLargest(int arr[],int n,int *secLar){
     *secLar = arr[0];
     for(int i=0;i<n;i++){
         if(arr[i] > *secLar){
-            *secLar = arr[i];
+            *secLar = arr[i]+1;
         }
     }
 
