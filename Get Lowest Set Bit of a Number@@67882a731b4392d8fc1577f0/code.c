@@ -11,7 +11,7 @@ int main() {
     int n;
     scanf("%d",&n);
     int position = lowestSetinBit(n);
-    if(position==0){
+    if(position == -1){
         printf("0");
     }
     else{
