@@ -12,11 +12,11 @@ int main() {
     int correct;
     scanf("%d",&n);
     struct library e[n];
+        scanf("%f",&maxPrice);
     for(int i=0;i<n;i++){
         scanf("%s %s %f",e[i].Book,e[i].Author,&e[i].price);
 
-        scanf("%f",&maxPrice);
-        if(e[i].price < maxPrice){
+        if(e[i].price > maxPrice){
             correct=i;
         }
     }
