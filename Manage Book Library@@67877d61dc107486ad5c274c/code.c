@@ -22,7 +22,7 @@ int main() {
     }
     printf("Books above price %.2f",maxPrice);
     for(int i=0;i<n;i++){
-        printf("\nTitle: %s, Author: %s, Price: %.2f\n",e[correct].Book,e[correct].Author,e[correct].price);
+        printf("Title: %s, Author: %s, Price: %.2f\n",e[correct].Book,e[correct].Author,e[correct].price);
     
     }
     return 0;
