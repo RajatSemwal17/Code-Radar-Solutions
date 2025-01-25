@@ -25,7 +25,11 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    sortArr(arr,n);
-    printArr(arr,n);
+    if(sortArr(arr,n)){
+        printf("Sorted");
+    }
+    else{
+        printf("Not Sorted");
+    }
     return 0;
 }
