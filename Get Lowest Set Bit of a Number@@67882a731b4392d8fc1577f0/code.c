@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int lowestSetinBit(int n){
-    return n & -n;
+    return n & ~n;
 }
 
 int main() {
