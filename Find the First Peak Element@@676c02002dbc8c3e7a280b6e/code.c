@@ -29,7 +29,9 @@ int main() {
     if(peakNum != -1){
         printf("%d",peakNum);
     }
-
+    else{
+        printf("error");
+    }
     return 0;
 }
 
