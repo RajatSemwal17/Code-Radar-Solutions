@@ -13,7 +13,7 @@ int main() {
     
     for(int i=0;i<n;i++){
     scanf("%s %s %f",e[i].Book,e[i].Author,&e[i].price);
-    }
+    }fgtr
 
     float maxPrice;
     scanf("%f",&maxPrice);
