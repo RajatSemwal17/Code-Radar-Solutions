@@ -10,6 +10,7 @@ int sortArr(int arr[],int n){
             }
         }
     }
+    return 1;
 }
 
 int printArr(int arr[],int n){
@@ -26,7 +27,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int result = sortArr(arr,n);
-    if(result){
+    if(result==1){
         printf("Sorted");
     }
     else{
