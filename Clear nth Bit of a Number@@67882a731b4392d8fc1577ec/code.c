@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int nthBitprint(int n, int m){
-    return n & ~(1<<n);
+    return n & ~(1<<m);
 }
 int main() {
     int n,m;
