@@ -15,6 +15,7 @@ int firstMaxNumber(int arr[],int n){
     if(arr[n-1]>arr[n-2]){
         return arr[n-1];
     }
+    return -1;
 }
 
 int main() {
@@ -25,10 +26,10 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int peakNum = firstMaxNumber(arrr,n);
-    if(peakNum){
+    if(peakNum != -1){
         printf("%d",peakNum);
     }
-    
+
     return 0;
 }
 
