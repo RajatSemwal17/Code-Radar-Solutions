@@ -14,6 +14,6 @@ int countLeadingZeroes(int n){
 int main() {
     int n;
     scanf("%d",&n);
-    printf("%d",countLeadingZeroes(n))
+    printf("%d",countLeadingZeroes(n));
     return 0;
 }
