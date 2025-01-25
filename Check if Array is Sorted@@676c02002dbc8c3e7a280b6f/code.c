@@ -25,7 +25,8 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(sortArr(arr,n)){
+    int result = sortArr(arr,n);
+    if(result){
         printf("Sorted");
     }
     else{
