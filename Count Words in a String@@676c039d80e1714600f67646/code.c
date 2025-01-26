@@ -2,7 +2,7 @@
 #include <ctype.h>
 
 int countWords(const char *str){
-    int count = 0;word = 0;
+    int count = 0,word = 0;
     while(*str){
         if(isspace(*str)){
             word = 0;
