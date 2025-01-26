@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int strlendfcd(char name[]){
-    int i=0;
+int strlen(char name[]){
+    int i==0;
     while(name[i] != '\0'){
         i++;
     }
