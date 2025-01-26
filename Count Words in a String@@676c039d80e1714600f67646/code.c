@@ -19,6 +19,6 @@ int countWords(char const *str){
 int main() {
     char str[70];
     fgets(str,sizeof(str),stdin);
-    printf("%s",countWords(str));
+    printf("%d",countWords(str));
     return 0;
 }
