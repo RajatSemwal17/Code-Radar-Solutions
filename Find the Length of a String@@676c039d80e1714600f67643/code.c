@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <string.h>
 
-int strlen(const char name[]){
+int strlen(char name[]){
     int i=0;
     while(name[i] != '\0'){
         i++;
