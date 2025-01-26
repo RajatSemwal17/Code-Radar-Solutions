@@ -12,7 +12,7 @@ int strlen(const char name[]){
 int main() {
     char name[30];
     fgets(name,sizeof(name),stdin);
-    name[strcspn(name,"\n")] = '\0';
+    // name[strcspn(name,"\n")] = '\0';
     printf("%d",strlen(name));
     return 0;
 }
