@@ -5,10 +5,9 @@ struct week{
 };
 
 int main() {
-    int n=7;
-    struct week e[n];
+    struct week e[6];
     float totalTemp=0.0;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<6;i++){
         scanf("%f",&e[i].temp);
         totalTemp += e[i].temp;
     }
