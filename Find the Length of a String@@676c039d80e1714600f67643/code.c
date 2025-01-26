@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int strlen(const char name[]){
     int count=0;
