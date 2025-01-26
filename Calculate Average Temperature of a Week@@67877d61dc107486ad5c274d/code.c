@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 struct week{
-    int temp;
+    float temp;
 };
 
 int main() {
     int n=7;
     struct week e[7];
-    int totalTemp=0;
+    float totalTemp=0.0;
     for(int i=0;i<n;i++){
-        scanf("%d",&e[i].temp);
+        scanf("%f",&e[i].temp);
         totalTemp += e[i].temp;
     }
     printf("%d",totalTemp);
