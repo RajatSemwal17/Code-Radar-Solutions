@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-int strlen(char name[]){
-    
-}
+
 
 int main() {
     char name[30];
