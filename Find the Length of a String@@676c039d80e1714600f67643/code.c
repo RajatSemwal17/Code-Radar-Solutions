@@ -3,8 +3,8 @@
 
 int main() {
     char name[30];
-    fgets(name,sizeof(name),stdin);
     int len = strlen(name);
+    fgets(name,sizeof(name),stdin);
     printf("%d",len);
     return 0;
 }
