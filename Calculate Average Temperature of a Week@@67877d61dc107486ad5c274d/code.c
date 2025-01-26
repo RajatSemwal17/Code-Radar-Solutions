@@ -12,6 +12,6 @@ int main() {
         scanf("%f",&e[i].temp);
         totalTemp += e[i].temp;
     }
-    printf("%.2f",totalTemp);
+    printf("%d",totalTemp);
     return 0;
 }
