@@ -10,7 +10,8 @@ int mystrlen(char name[]){
 
 int main(){
     char name[30];
-    scanf("%29s",name);
+    // scanf("%s",name);
+    fgets(name,sizeof(name),stdin);
     printf("%d",mystrlen(name));
     return 0;
 }
