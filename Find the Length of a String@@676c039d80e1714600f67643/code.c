@@ -6,7 +6,7 @@ int mystrlen(char *name){
     while(name[i] != '\0'){
         i++;
     }
-    return i-1;
+    return i;
 }
 
 int main(){
