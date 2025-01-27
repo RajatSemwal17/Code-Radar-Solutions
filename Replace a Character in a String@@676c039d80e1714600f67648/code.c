@@ -10,7 +10,7 @@ char modifyString(char name[],char one,char two){
 
 int main() {
     char name[30] , one , two;
-    scanf("%s",name);
+    fgets(name,sizeof(name),stdin);
     scanf("%c",&one);
     scanf("%c",&two);
     modifyString(name,one,two);
