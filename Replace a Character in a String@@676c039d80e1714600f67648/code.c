@@ -13,7 +13,7 @@ int main() {
     scanf("%s",name);
     scanf("%c",&one);
     scanf("%c",&two);
-
-    printf("%s",modifyString(name,one,two));
+    modifyString(name,one,two);
+    printf("%s",name);
     return 0;
 }
