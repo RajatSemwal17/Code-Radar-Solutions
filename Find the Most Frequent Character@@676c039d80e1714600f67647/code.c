@@ -6,14 +6,14 @@ void MostFreqChr(char inputs[]){
     char ChrFreq = 'a';
     for(int i=0;i<26;i++){
         char c = inputs[i];
-        if(c>='a' || c<='z'){
-            freq[c-'a']++;
+        if(c>='a' && c<='z'){
+            freq[c - 'a']++;
         }
     }
     for(int i=0;i<26;i++){
         if(freq[i]>macCount){
             macCount = freq[i];
-            ChrFreq = 'a'+ i;
+            ChrFreq = 'a' + i;
         }
     }
     printf("%c",ChrFreq);
