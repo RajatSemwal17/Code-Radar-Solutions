@@ -4,7 +4,7 @@ char MostFreqChr(char inputs[]){
     int freq[256] = {0};
     int macCount = 0;
     char ChrFreq = 'a';
-    for(int i=0;i<n;i++){
+    for(int i=0;i<26;i++){
         char c = inputs[i];
         if(c>='a' || c<='z'){
             freq[c-'a']++;
