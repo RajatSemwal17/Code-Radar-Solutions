@@ -1,25 +1,39 @@
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include<stdio.h>
 
-
-int main() {
-    char str[100];
-    int freq[26] = {0}, maxFreq=0;
-    char maxChar;
-    fgets(str,sizeof(str),stdin);
-
-    for(int i=0;i<str[i];i++){
-        if(isalpha(str[i])){
-            char ch = tolower(str[i]);
-            freq[ch - 'a']++;
-
-        if(freq[ch-'a']>maxFreq){
-            maxFreq = freq[ch-'a'];
-            maxChar = ch;
-        }
+char MostFreqChr(char inputs[]){
+    int freq[256] = {0};
+    int macCount = 0;
+    char ChrFreq = 'a';
+    for(int i=0;i<n;i++){
+        char c = inputs[i];
+        if(c>='a' || c<='z'){
+            freq[c-'a']++;
         }
     }
-    printf("%c",maxChar);
-    return 0;
+    for(int i=0;i<26;i++){
+        if(freq[i]>macCount){
+            macCount = freq[i];
+            ChrFreq = 'a'+ i;
+        }
+    }
+    printf("%c",ChrFreq);
 }
+
+int main(){
+    char inputs[30];
+    fgets(inputs,sizeof(inputs),stdin);
+    MostFreqChr(inputs);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
