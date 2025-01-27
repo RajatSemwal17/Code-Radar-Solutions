@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int mystrlen(char *name){
-    int i==0;
+    int i=0;
     while(name[i] != '\0'){
         i++;
     }
