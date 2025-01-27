@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char modifyString(char name[],char one,char two){
+char modifyString(char *name,char one,char two){
     for(int i=0;name[i] != '\0';i++){
         if(name[i] == one){
             name[i] = two;
