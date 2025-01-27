@@ -1,4 +1,5 @@
 #include<stdio.h>
+// #include<string.h>
 
 int mystrlen(char name[]){
     int i=0;
@@ -10,8 +11,8 @@ int mystrlen(char name[]){
 
 int main(){
     char name[30];
-    // scanf("%s",name);
     fgets(name,sizeof(name),stdin);
+    // name[strcspn(name,"\n")] = '\0';
     printf("%d",mystrlen(name));
     return 0;
 }
