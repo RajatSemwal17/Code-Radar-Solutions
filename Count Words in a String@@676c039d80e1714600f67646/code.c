@@ -7,7 +7,7 @@ int countWords(const char *str){
         if(isspace(*str)){
             word = 0;
         }
-        else if(!word){
+        else{
             word = 1;
             count++;
         }
