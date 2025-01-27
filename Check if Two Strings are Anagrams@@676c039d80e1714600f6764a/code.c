@@ -11,7 +11,7 @@ int anaGrams(char str1[],char str2){
         count[tolower(str2[i])]--;
     }
     for(int i=0;i<256;i++){
-        if(count!=0){
+        if(count[i]!=0){
             return 0;
         }
     }
