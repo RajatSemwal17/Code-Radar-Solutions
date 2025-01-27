@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-char MostFreqChr(char inputs[]){
+void MostFreqChr(char inputs[]){
     int freq[256] = {0};
     int macCount = 0;
     char ChrFreq = 'a';
