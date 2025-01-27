@@ -6,6 +6,9 @@ int main() {
     if(a | 0){
         printf("Set");
     }
+    else if(a==0){
+        printf("Set");
+    }
     else{
         printf("Not Set");
     }
