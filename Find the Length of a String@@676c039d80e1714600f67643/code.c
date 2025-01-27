@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int strlen(char *name){
+int mystrlen(char *name){
     int i=0;
     while(name[i] != '\0'){
         i++;
@@ -11,6 +11,6 @@ int strlen(char *name){
 int main(){
     char name[30];
     scanf("%s",name);
-    printf("%d",strlen(name));
+    printf("%d",mystrlen(name));
     return 0;
 }
