@@ -26,11 +26,11 @@ int main() {
         scanf("%d\n",&arr[i]);
     }
     int peakNum = firstMaxNumber(arr,n);
-    if(peakNum != -1){
-        printf("%d",peakNum);
+    if(peakNum = -1){
+        printf("-1");
     }
     else{
-        printf("-1");
+        printf("%d",peakNum);
     }
     return 0;
 }
