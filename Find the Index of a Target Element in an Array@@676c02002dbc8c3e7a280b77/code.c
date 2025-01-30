@@ -19,7 +19,7 @@ int main() {
     }
     int target;
     scanf("%d",&target);
-    index(arr,n,target)
+    index(arr,n,target);
 
     return 0;
 }
