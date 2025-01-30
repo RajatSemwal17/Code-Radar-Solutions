@@ -17,7 +17,7 @@ int main(){
     printf("Books above price %.2f:\n",threshold);
     for(int i=0;i<n;i++){
         if(e[i].price>threshold)
-        printf("Title: %s, Author: %s, Price: %.2f\n",threshold,e[i].X,e[i].Y,e[i].price);
+        printf("Title: %s, Author: %s, Price: %.2f\n",e[i].X,e[i].Y,e[i].price);
     }
     
 }
