@@ -7,7 +7,7 @@ typedef struct info {
 
 int main(){
     int n;
-    int threshold;
+    float threshold;
     scanf("%d",&n);
     info e[n];
     for(int i=0;i<n;i++){
