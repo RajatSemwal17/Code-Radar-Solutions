@@ -11,4 +11,5 @@ int main(){
         scanf("%d",&e[i].temp);
         sum += e[i].temp;
     }
+    printf("%d",sum);
 }
