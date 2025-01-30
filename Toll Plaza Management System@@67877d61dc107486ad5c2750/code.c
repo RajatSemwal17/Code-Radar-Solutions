@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include<string.h>
 
-struct info{
+typedef struct info{
     char num[30];
     char name[30];
     float price;
-};
+}info;
 
 int main() {
     int n;
     float carToll = 0.0 ,trucksToll = 0.0 , bikeTolls = 0.0;
     scanf("%d",&n);
-    struct info e[n];
+    info e[n];
     for(int i=0;i<n;i++){
         scanf("%s %s %f",e[i].num,e[i].name,&e[i].price);
 
