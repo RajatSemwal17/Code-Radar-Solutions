@@ -1,16 +1,14 @@
 #include<stdio.h>
 
-struct week{
-    float temp;
-};
+typedef struct week{
+    int temp;
+}info;
 
 int main(){
-    struct week e[7];
-    float totalTemp = 0.0;
+    info e[7];
+    int sum=0;
     for(int i=0;i<7;i++){
-        scanf("%f",&e[i].temp);
-        totalTemp += e[i].temp;
+        scanf("%d",&e[i].temp);
+        sum += e[i].temp;
     }
-    printf("%.2f",totalTemp);
-    
 }
