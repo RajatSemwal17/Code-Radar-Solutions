@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void modifyString(char *name,char one,char two){
+void modifyString(char name[],char one,char two){
     for(int i=0;name[i] != '\0';i++){
         if(name[i] == one){
             name[i] = two;
