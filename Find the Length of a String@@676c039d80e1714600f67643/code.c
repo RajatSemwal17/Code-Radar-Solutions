@@ -11,7 +11,8 @@ int mystrlen(char *name){
 
 int main(){
     char name[30];
-    scanf("%[^\n]s",name)
+    fgets(name,sizeof(name),stdin);
+    name[strcspn(name,"\n")] = '\0';
     printf("%d",mystrlen(name));
     return 0;
 }
