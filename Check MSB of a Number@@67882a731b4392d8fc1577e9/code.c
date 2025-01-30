@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int n,msb=1;
-    scanf("%d",&n);
+    long long int n,msb=1;
+    scanf("%lld",&n);
     if(n==0){
         printf("Not Set");
     }
