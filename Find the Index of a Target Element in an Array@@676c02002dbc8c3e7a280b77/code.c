@@ -12,12 +12,12 @@ void index(int arr[],int n,int target){
 
 int main() {
     int n;
+    int target;
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int target;
     scanf("%d",&target);
     index(arr,n,target);
 
