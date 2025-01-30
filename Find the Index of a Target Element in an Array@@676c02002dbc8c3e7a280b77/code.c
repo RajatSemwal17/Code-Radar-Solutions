@@ -22,7 +22,7 @@ int main() {
         scanf("%d ",&arr[i]);
     }
     scanf("%d",&target);
-    // index(arr,n,target);
+    index(arr,n,target);
 
     return 0;
 }
