@@ -7,6 +7,8 @@ void modifyString(char *name,char one,char two){
             name[i] = two;
         }
     }
+    printf("%s",name);
+
 }
 
 int main() {
@@ -17,6 +19,5 @@ int main() {
     scanf("%c",&one);
     scanf("%c",&two);
     modifyString(name,one,two);
-    printf("%s",name);
     return 0;
 }
