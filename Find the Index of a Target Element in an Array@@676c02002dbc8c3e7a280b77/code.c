@@ -8,6 +8,9 @@ void index(int arr[],int n,int target){
             found=1;
         }
     }
+    if(!found){
+        printf("-1");
+    }
 }
 
 int main() {
