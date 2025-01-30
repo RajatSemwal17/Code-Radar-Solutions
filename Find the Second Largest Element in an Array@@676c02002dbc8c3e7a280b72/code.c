@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void secondLargest(int arr[],int n,int *secLar){
+void secondLargest(int arr[],int n,int *largest){
     *largest = arr[0]-1;
     for(int i=0;i<n;i++){
         if(arr[i] > *largest){
@@ -17,14 +17,11 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
-    int secLar;
+    int largest;
     secondLargest(arr,n,&largest);
     printf("%d",largest);
     return 0;
 }
-
-
-
 
 
 
