@@ -24,7 +24,7 @@ int main() {
         // e[i].bonus = Bonus(e[i].salary);
     }
     for(int i=0;i<n;i++){
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",e[i].X,e[i].Y,Bonus(e[i].salary));
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",e[i].X,e[i].Y,Bonus(e[i].bonus));
     }
     return 0;
 }
