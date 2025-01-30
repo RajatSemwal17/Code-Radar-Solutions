@@ -12,5 +12,5 @@ int main(){
         scanf("%s %d",e[i].day,&e[i].temp);
         sum += e[i].temp;
     }
-    printf("%d",sum);
+    printf("%.2f",sum/7);
 }
