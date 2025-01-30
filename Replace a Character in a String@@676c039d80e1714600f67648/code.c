@@ -10,7 +10,9 @@ void modifyString(char *name,char one,char two){
 }
 
 int main() {
-    char name[30] , one , two;
+    char name[30];
+    char one;
+    char two;
     scanf("%s",name);
     scanf("%c",&one);
     scanf("%c",&two);
