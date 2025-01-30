@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void secondLargest(int arr[],int n,int *largest){
+void secondLargest(int arr[],int n,int largest){
     int seclar = arr[0];
 
-    *largest = arr[0];
+    largest = arr[0];
     for(int i=0;i<n;i++){
-        if(arr[i] > *largest){
-            *largest = arr[i];
+        if(arr[i] > largest){
+            largest = arr[i];
         }
     }
 
@@ -32,7 +32,7 @@ int main() {
         scanf("%d ",&arr[i]);
     }
     int largest;
-    secondLargest(arr,n,&largest);
+    secondLargest(arr,n,largest);
     return 0;
 }
 
