@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int SetNthBit(int n, int m){
-    return n | (1<<m)
+    return n | (1<<m);
 }
 
 int main() {
