@@ -30,7 +30,7 @@ int main() {
         printf("%d",peakNum);
     }
     else{
-        printf("error");
+        printf("-1");
     }
     return 0;
 }
