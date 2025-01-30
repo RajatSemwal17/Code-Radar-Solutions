@@ -9,7 +9,7 @@ void FrequencyOfElements(int arr[],int n){
         if(a[i]==1){
             continue;
         }
-        int count=1;
+        int count=0;
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
