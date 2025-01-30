@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int a;
-    scanf("%d",&a);
-    if(a | 0){
-        printf("Set");
+    int num , msb 1;
+    scanf("%d",&num);
+    while(num>1){
+        num=num>>1;
+        msb=msb<<1;
+
     }
-    else if(a==0){
-        printf("Set");
-    }
-    else{
-        printf("Not Set");
-    }
+    print(%)
     return 0;
 }
