@@ -23,13 +23,13 @@ int main() {
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<=n;i++){
-        scanf("%d",&arr[i]);
+        scanf("%d\n",&arr[i]);
     }
     int peakNum = firstMaxNumber(arr,n);
     if(peakNum != -1){
         printf("%d",peakNum);
     }
-    else{
+    else if{
         printf("-1");
     }
     return 0;
