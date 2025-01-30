@@ -4,7 +4,7 @@ void index(int arr[],int n,int target){
     int found=0;
     for(int i=0;i<n;i++){
         if(arr[i]==target){
-            printf("%d",target);
+            printf("%d",i);
             found=1;
         }
     }
@@ -22,7 +22,7 @@ int main() {
         scanf("%d ",&arr[i]);
     }
     scanf("%d",&target);
-    index(arr,n,target);
+    // index(arr,n,target);
 
     return 0;
 }
