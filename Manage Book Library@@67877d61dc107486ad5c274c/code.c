@@ -7,13 +7,15 @@ typedef struct info {
 
 int main(){
     int n;
+    int threshold;
     scanf("%d",&n);
     info e[n];
     for(int i=0;i<n;i++){
         scanf("%s %s %f",e[i].X,e[i].Y,&e[i].price);
     }
+    scanf("%f",&threshold);
     for(int i=0;i<n;i++){
-        printf("%s %s %f",e[i].X,e[i].Y,e[i].price);
+        printf("Books above price %.2f :\nTitle: %s, Author: %s, Price: %.2f",threshold,e[i].X,e[i].Y,e[i].price);
     }
     
 }
