@@ -3,6 +3,9 @@
 int main() {
     int n,msb=1;
     scanf("%d",&n);
+    if(n==0){
+        printf("Not Set");
+    }
     while(n>1){
         n=n>>1;
         msb=msb<<1;
