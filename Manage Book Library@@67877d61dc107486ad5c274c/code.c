@@ -1,30 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 
-struct library{
-    char Book[20];
-    char Author[20];
+typedef struct info {
+    char X[20] , Y[20];
     float price;
-};
+}info;
 
-int main() {
+int main(){
     int n;
     scanf("%d",&n);
-    struct library e[n];
-    
+    info e[n];
     for(int i=0;i<n;i++){
-    scanf("%s %s %f",e[i].Book,e[i].Author,&e[i].price);
-    }fgtr
-
-    float maxPrice;
-    scanf("%f",&maxPrice);
-
-    printf("Books above price %.2f:\n",maxPrice);
+        scanf("%s %s %f",e[i].X,e[i].Y,&e[i].price);
+    }
     for(int i=0;i<n;i++){
-
-        if(e[i].price > maxPrice){
-        printf("Title: %s, Author: %s, Price: %.2f\n",e[correct].Book,e[correct].Author,e[correct].price);
-        }
+        printf("%s %s %f",e[i].X,e[i].Y,e[i].price);
     }
     
-    return 0;
 }
