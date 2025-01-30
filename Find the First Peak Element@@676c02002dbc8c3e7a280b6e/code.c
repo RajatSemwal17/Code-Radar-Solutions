@@ -27,10 +27,10 @@ int main() {
     }
     int peakNum = firstMaxNumber(arr,n);
     if(peakNum = -1){
-        printf("-1");
+        printf("%d",peakNum);
     }
     else{
-        printf("%d",peakNum);
+        printf("-1");
     }
     return 0;
 }
