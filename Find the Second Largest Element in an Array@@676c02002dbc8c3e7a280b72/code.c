@@ -22,6 +22,9 @@ void secondLargest(int arr[],int n,int largest){
     if(found){
         printf("%d",seclar);
     }
+    else{
+        printf("-1");
+    }
 }
 
 int main() {
