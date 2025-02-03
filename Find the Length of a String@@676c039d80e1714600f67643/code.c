@@ -3,6 +3,9 @@
 
 int mystrlen(char *name){
     int i=0;
+    if(char[20] == ""){
+        return 0;
+    }
     while(name[i] != '\0'){
         i++;
     }
