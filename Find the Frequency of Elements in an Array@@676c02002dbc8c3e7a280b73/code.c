@@ -24,21 +24,5 @@ int main(){
         printf("%d %d",arr[i],freq[i]);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return 0;
+}
