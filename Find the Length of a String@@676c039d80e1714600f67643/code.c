@@ -15,6 +15,10 @@ int main(){
     fgets(name,sizeof(name),stdin);
     name[strcspn(name,"\n")] = '\0';
     int length = mystrlen(name);
+    if(name[0]="\0"){
+        printf("0");
+    }
+    else
     printf("%d",length);
   
     return 0;
