@@ -4,7 +4,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     int count;
-    int freq[100];
+    int freq[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
         freq[i] = -1;
