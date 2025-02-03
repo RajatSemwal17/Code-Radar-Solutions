@@ -17,9 +17,9 @@ int main(){
     // if(char[30]==" "){
     //     printf("0");
     // }
-    else{
+    // else{
 
     printf("%d",mystrlen(name));
-    }
+    // }
     return 0;
 }
