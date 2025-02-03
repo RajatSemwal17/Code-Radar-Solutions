@@ -14,7 +14,7 @@ int main(){
     char name[30];
     fgets(name,sizeof(name),stdin);
     name[strcspn(name,"\n")] = '\0';
-    if(name[0]='\0'){
+    if(name[0]=='\0'){
         printf("0");
         return 0;
     }
