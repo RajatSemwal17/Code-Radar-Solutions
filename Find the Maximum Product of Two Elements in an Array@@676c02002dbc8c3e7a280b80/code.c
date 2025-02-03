@@ -20,7 +20,7 @@ int main() {
             largest2nd = arr[i];
         }
     }
-    printf("%d %d",largest2nd,largest);
+    printf("%d",largest2nd*largest);
 
     return 0;
 }
