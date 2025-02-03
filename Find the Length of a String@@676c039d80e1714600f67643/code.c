@@ -14,12 +14,11 @@ int main(){
     char name[30];
     fgets(name,sizeof(name),stdin);
     name[strcspn(name,"\n")] = '\0';
-    int length = mystrlen(name);
     if(name[0]='\0'){
         printf("0");
     }
     else{
-    printf("%d",length);
+    printf("%d",mystrlen(name));
     }
   
     return 0;
