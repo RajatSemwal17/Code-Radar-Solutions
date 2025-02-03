@@ -18,8 +18,9 @@ int main(){
     if(name[0]="\0"){
         printf("0");
     }
-    else
+    else{
     printf("%d",length);
+    }
   
     return 0;
 }
