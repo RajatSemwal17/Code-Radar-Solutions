@@ -17,9 +17,8 @@ int main(){
     if(name[0]='\0'){
         printf("0");
     }
-    else{
     printf("%d",mystrlen(name));
-    }
+    
   
     return 0;
 }
