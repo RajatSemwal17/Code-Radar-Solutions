@@ -1,36 +1,30 @@
-#include <stdio.h>
-
-void FrequencyOfElements(int arr[],int n){
-    int a[n];
-    for(int i=0;i<n;i++){
-        a[i]=0;
-    }
-    for(int i=0;i<n;i++){
-        if(a[i]==1){
-            continue;
-        }
-        int count=1;
-        for(int j=i+1;j<n;j++){
-            if(arr[i]==arr[j]){
-                count++;
-                a[j]=1;
-            }
-        }
-        printf("%d %d\n",arr[i],count);
-    }
-
-}
-
-int main() {
+#include<stdio.h>
+int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
+    int count;
+    int freq[100];
     for(int i=0;i<n;i++){
-        scanf("%d ",&arr[i]);
+        scanf("%d",&arr[i]);
+        freq[i] = -1;
     }
-    FrequencyOfElements(arr,n);
-    return 0;
+    for(int i=0;i<n;i++){
+        count=1;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
+                count++;
+                freq[j] = 0;
+            }
+            if(freq[i] != 0){
+                freq[i] = count;
+            }
+    }
+    for(int i=0;i<n;i++){
+        printf("%d %d",arr[i],freq[i]);
+    }
 }
+
 
 
 
