@@ -18,7 +18,7 @@ int main() {
             largest2nd = arr[i];
         }
     }
-    printf("%d",largest2nd);
+    printf("%d",largest2nd*largest2nd);
 
     return 0;
 }
