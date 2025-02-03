@@ -16,6 +16,7 @@ int main(){
     name[strcspn(name,"\n")] = '\0';
     if(name[0]='\0'){
         printf("0");
+        return 0;
     }
     printf("%d",mystrlen(name));
     
