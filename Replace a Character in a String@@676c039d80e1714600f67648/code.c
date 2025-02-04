@@ -16,6 +16,7 @@ int main() {
     char one;
     char two;
     fgets(name,sizeof(name),stdin);
+    name[strcspn(name,"\n")] = '\0';
     scanf("%c",&one);
     scanf("%c",&two);
     modifyString(name,one,two);
