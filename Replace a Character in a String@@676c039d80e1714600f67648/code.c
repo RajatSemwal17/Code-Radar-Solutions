@@ -2,7 +2,7 @@
 #include <string.h>
 
 void modifyString(char name[],char one,char two){
-    for(int i=0;name[i] != '\0';i++){
+    for(int i=0;name[i]<strlen(name);i++){
         if(name[i] == one){
             name[i] = two;
         }
