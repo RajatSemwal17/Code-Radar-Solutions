@@ -4,8 +4,8 @@
 int binary(char name[]){
     for(int i=0;i<strlen(name);i++){
         char c = name[i]
-        if(c!='1' && c!='0'){
-            printf("No");
+        if(c=='1' || c=='0'){
+            printf("Yes");
         }
         else{
             printf("No");
