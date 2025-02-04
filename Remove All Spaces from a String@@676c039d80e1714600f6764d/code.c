@@ -12,9 +12,10 @@ void removeSpaces(char name[]){
 }
 
 int main() {
-    char name[30];
+    char name[100];
     fgets(name,sizeof(name),stdin);
     removeSpaces(name);
+    name[strcspn(name,"\n")]='\0';
     printf("%s",name);
     return 0;
 }
