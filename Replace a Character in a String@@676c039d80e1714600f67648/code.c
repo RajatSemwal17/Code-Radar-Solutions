@@ -15,7 +15,7 @@ int main() {
     char name[30];
     char one;
     char two;
-    scanf("%s",name);
+    fgets(name,sizeof(name),stdin);
     scanf("%c",&one);
     scanf("%c",&two);
     modifyString(name,one,two);
