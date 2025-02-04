@@ -13,7 +13,7 @@ int binary(char name[]){
 int main() {
     char name[20];
     scanf("%s",name);
-    if(binary){
+    if(binary(name)){
         printf("Yes");
     }
     return 0;
