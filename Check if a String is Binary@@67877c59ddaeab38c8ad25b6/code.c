@@ -15,6 +15,6 @@ int binary(char name[]){
 int main() {
     char name[20];
     scanf("%s",name);
-    printf("%s",binary(name) ? "Yes" : "No");
+    binary(name);
     return 0;
 }
