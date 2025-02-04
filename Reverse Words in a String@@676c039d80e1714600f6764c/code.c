@@ -15,6 +15,6 @@ int main() {
     char input[30],input2[30];
     scanf("%s %s",input,input2);
     ReverseString(input);
-    printf("%s",input)
+    printf("%s",input);
     return 0;
 }
