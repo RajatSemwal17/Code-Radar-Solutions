@@ -4,7 +4,8 @@
 int main() {
     char str[50];
     char name;
-    scanf("%s",str);
+    // scanf("%s",str);
+    fgets(str,sizeof(str),stdin);
     scanf("%c",&name);
     for(int i=0;i<strlen(str);i++){
         char c = str[i];
