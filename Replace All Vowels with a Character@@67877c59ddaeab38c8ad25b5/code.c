@@ -8,7 +8,7 @@ int main() {
     scanf("%c",&name);
     for(int i=0;i<strlen(str);i++){
         char c = str[i];
-        if(c=='a' || c=='e' || c=='i' || c='o' || c=='u'){
+        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
             str[i] = name;
         }
     }
