@@ -5,7 +5,7 @@ void rotateArray(int arr[], int n, int rotate) {
         printf("%d ", arr[i]);
     }
     for (int i = 0; i < rotate; i++) {
-        printf(" %d", arr[i]);
+        printf("%d ", arr[i]);
     }
 }
 
