@@ -1,12 +1,15 @@
 #include <stdio.h>
 
 int majorityElements(int arr[], int n){
+    int count=0 , a = -1;
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(arr[i]==arr[j]){
-                printf("%d",i);
-            }
-        }
+        if(count=0) a = arr[i];
+        count+=arr[i] == a ? 1 : -1;
+    }
+    count = 0;
+    for(int i=0;i<n;i++){
+        if(arr[i]==a)count++;
+        return count > n/2 ? a : -1
     }
 }
 
@@ -17,6 +20,6 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    majorityElements(arr,n);
+    printf("%d",majorityElements(arr,n));
     return 0;
 }
