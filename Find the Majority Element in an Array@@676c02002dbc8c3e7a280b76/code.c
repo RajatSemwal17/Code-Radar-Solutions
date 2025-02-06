@@ -9,8 +9,8 @@ int majorityElements(int arr[], int n){
     count = 0;
     for(int i=0;i<n;i++){
         if(arr[i]==a)count++;
-        return count > n/2 ? a : -1;
     }
+        return count > n/2 ? a : -1;
 }
 
 int main() {
