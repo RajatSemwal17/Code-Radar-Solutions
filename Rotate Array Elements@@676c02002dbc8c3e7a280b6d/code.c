@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void rotateArray(int arr[],int n,index rotate){
+void rotateArray(int arr[],int n,int rotate){
     for(int i=rotate;i<n;i++){
         printf("%d\n",arr[i]);
     }
