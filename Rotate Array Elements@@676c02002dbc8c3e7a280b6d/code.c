@@ -4,6 +4,9 @@ void rotateArray(int arr[],int n,index rotate){
     for(int i=rotate;i<n;i++){
         printf("%d\n",arr[i]);
     }
+    for(int i==;i<rotate;i++){
+        printf("%d\n",arr[i]);
+    }
 }
 
 int main() {
