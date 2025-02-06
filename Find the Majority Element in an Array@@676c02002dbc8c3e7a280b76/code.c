@@ -3,7 +3,7 @@
 int majorityElements(int arr[], int n){
     int count=0 , a = -1;
     for(int i=0;i<n;i++){
-        if(count=0) a = arr[i];
+        if(count==0) a = arr[i];
         count+=arr[i] == a ? 1 : -1;
     }
     count = 0;
