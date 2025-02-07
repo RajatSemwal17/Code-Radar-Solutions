@@ -1,10 +1,27 @@
 #include <stdio.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
+int convertDecToBinary(int n);
+int convertDecToBinary(int n){
+    int arr[32];
+    int i=0;
+    if(n==0){
+        printf("0");
+        return;
+    }
+    while(n>1){
+        arr[i] = n%2;
+        n/=2;
+        i++;
+    }
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+
 }
 
 int main() {
-    printf("%s", welcome());
+    int n;
+    scanf("%d",&n);
+    convertDecToBinary(n);
     return 0;
 }
