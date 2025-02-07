@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int convertDecToBinary(int n);
-int convertDecToBinary(int n){
+void convertDecToBinary(int n);
+void convertDecToBinary(int n){
     int arr[32];
     int i=0;
     if(n==0){
         printf("0");
         return;
     }
-    while(n>1){
+    while(n>0){
         arr[i] = n%2;
         n/=2;
         i++;
