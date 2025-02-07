@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-    int primeNumber(int n){
+    int isprime(int n){
         if(n<=1){
             return 0;
         }
@@ -24,7 +24,7 @@ int main(){
     
     for (int i = 0; i < n; i++)
     {
-            printf("%d\n",primeNumber(arr[i]));
+            printf("%d\n",isprime(arr[i]));
 
     }
     
