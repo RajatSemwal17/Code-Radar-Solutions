@@ -8,13 +8,14 @@ void convertDecToBinary(int n){
         printf("0");
         return;
     }
+
     while(n>0){
         arr[i] = n%2;
         n/=2;
         i++;
     }
-    for(int i=0;i<n;i++){
-        printf("%d",arr[i]);
+    for(int j=i=1;j>=0;j--){
+        printf("%d",arr[j]);
     }
 
 }
