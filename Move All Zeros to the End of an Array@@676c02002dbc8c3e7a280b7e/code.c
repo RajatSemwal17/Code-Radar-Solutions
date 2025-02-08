@@ -7,6 +7,11 @@ int main() {
     int arr[n];
     for(int i=0;i<n;i++){
     scanf("%d",&arr[i]);
+    int index=0;
+
+    if(arr[i]!=0){
+        arr[index++] = arr[i];
+    }
     }
     for(int i=0;i<n;i++){
     printf("%d ",arr[i]);
