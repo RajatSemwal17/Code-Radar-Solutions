@@ -3,13 +3,11 @@
 int palindromeArray(int arr[],int n);
 int palindromeArray(int arr[],int n){
     for(int i=0;i<n;i++){
-        if(arr[i]==arr[n-i-1]){
-        printf("YES");
-    }
-    else{
-        printf("NO");
+        if(arr[i]!=arr[n-i-1]){
+            return 0;
     }
     }
+    return 1;
 }
 
 int main() {
@@ -19,6 +17,11 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    palindromeArray(arr,n);
+    if(palindromeArray(arr,n)){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
     return 0;
 }
