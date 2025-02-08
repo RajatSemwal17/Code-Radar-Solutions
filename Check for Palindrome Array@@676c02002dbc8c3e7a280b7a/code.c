@@ -2,7 +2,7 @@
 
 int palindromeArray(int arr[],int n);
 int palindromeArray(int arr[],int n){
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n/2;i++){
         if(arr[i]!=arr[n-i-1]){
             return 0;
     }
