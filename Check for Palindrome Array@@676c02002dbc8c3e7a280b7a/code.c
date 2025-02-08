@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int palindromeArray(int arr[],int n);
-int palindromeArray(int arr[],int n){
-    if(arr[i]==arr[n-i-1]){
-        printf("YES");
-    }
-    else{
-        printf("NO");
-    }
-}
+// int palindromeArray(int arr[],int n);
+// int palindromeArray(int arr[],int n){
+//     if(arr[i]==arr[n-i-1]){
+//         printf("YES");
+//     }
+//     else{
+//         printf("NO");
+//     }
+// }
 
 int main() {
     int n;
