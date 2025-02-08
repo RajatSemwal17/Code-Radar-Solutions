@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 void rotateArray(int arr[], int n, int rotate) {
+    rotate = rotate+1;
     for (int i = rotate; i < n; i++) {
         printf("%d ", arr[i]);
     }
