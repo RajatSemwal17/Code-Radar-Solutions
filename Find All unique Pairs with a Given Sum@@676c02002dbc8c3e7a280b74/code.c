@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int pairOfSum(int arr[],int n,int sum);
-int pairOfSum(int arr[],int n,int sum){
+void pairOfSum(int arr[],int n,int sum);
+void pairOfSum(int arr[],int n,int sum){
     // int found=0;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
