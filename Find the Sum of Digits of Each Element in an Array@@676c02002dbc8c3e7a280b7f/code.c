@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int sumOfDigit(int arr[],int n){
+int sumOfDigit(int n){
     int sum=0;
     while(n>0){
         sum+=n%10;
