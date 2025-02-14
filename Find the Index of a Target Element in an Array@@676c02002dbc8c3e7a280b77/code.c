@@ -18,6 +18,7 @@ int main()
         {
             printf("%d", i);
             found = 1;
+            break;
         }
     }
     if (!found)
