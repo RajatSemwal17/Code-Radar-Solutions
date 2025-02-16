@@ -4,10 +4,10 @@ void convertDecToBinary(int n);
 void convertDecToBinary(int n){
     int arr[32];
     int i=0;
-    if(n==0){
-        printf("0");
-        return;
-    }
+    // if(n==0){
+    //     printf("0");
+    //     return;
+    // }
 
     while(n>0){
         arr[i] = n%2;
