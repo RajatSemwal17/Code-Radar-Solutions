@@ -5,8 +5,8 @@ int countLeadingZeroes(int n){
     for(int i=31;i>=0;i--){
         if(n>>i & 1){
             // break;
-        }
         count++;
+        }
     }
     return count;
 }
