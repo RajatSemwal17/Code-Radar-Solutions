@@ -2,7 +2,7 @@
 
 int main() {
     int profit , loss;
-    scanf("%d %d",&loss,&profit);
+    scanf("%d %d",&loss, &profit);
     if(profit>loss){
         printf("Profit");
     }
