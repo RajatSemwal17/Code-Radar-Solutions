@@ -1,21 +1,13 @@
 #include <stdio.h>
 
-int lowestSetinBit(int n){
-    if(n==0){
-        return -1;
-    }
-    return n & -n;
-}
-
 int main() {
     int n;
     scanf("%d",&n);
-    int position = lowestSetinBit(n);
-    if(position == -1){
-        printf("0");
+    int count=0;
+    while(n&i == 0){
+        n=n>>1;
+        count++;
     }
-    else{
-        printf("%d",position);
-    }
+    printf("%d",count);
     return 0;
 }
