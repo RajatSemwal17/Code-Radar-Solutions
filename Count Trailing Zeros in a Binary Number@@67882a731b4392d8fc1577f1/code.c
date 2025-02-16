@@ -2,7 +2,7 @@
 
 int trailZeroes(int n){
     int count=0;
-    while((n&1)==0 && n!=0){
+    while((n&1)==0){
         count++;
         n = n>>1;
     }
