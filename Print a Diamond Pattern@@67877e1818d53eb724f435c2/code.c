@@ -4,7 +4,7 @@ int main(){
     scanf("%d",&n);
 
     for(int rows=0;rows<2*n-1;rows++){
-        int total = rows < n ? rows  : 2 * n - rows ;
+        int total = rows < n ? rows  : 2 * n - rows;
         int space = n-total;
         for(int i=0;i<space;i++){
             printf(" ");
