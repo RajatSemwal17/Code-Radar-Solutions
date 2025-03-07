@@ -1,11 +1,13 @@
 int selectionSort(int arr[], int n){
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n/2+1;j++){
-            if(arr[j] > arr[j+1]){
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp ;
+    for(int i=0;i<n-1;i++){
+        int x = i;
+        for(int j=0;j<n;j++){
+            if(arr[j] < arr[x]){
+                x=j;
             }
+            int temp = arr[x];
+            arr[x] = arr[i];
+            arr[i] = temp;
         }
     }
 }
