@@ -20,6 +20,6 @@ void printPrimesInRange(int a,int b){
     }
 
     if(!found){
-        printf("No prime Numbers");
+        printf("No prime numbers");
     }
 }
