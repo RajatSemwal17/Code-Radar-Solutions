@@ -11,8 +11,8 @@ int isPrime(int n){
 }
 
 void printPrimesInRange(int a,int b){
-    for(int i=a;i<=b;i++){
         if(isPrime(i)){
+    for(int i=a;i<=b;i++){
             printf("%d ",i);
         }
     }
