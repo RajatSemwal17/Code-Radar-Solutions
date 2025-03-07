@@ -5,10 +5,10 @@ int selectionSort(int arr[], int n){
             if(arr[j] < arr[x]){
                 x=j;
             }
+        }
             int temp = arr[x];
             arr[x] = arr[i];
             arr[i] = temp;
-        }
     }
 }
 void printArray(int arr[], int n){
