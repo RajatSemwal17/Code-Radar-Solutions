@@ -1,3 +1,4 @@
+#include<string.h>
 void bubbleSort(char arr[][100], int n){
     for(int i= n-1 ; i >= 0;i--){
         for(int j=0;i<i-1;j++){
