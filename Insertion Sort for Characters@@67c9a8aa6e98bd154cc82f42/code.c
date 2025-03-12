@@ -3,7 +3,7 @@ void insertionSort(char arr[],int n){
         int j=i;
         while(j>0 && arr[j-1] > arr[j]){
             int temp = arr[j-1];
-            arr[j-1] = aarr[j];
+            arr[j-1] = arr[j];
             arr[j] = temp;
         }
     }
