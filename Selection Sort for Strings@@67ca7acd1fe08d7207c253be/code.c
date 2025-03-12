@@ -1,4 +1,4 @@
-void selectionSort(int arr[],int n){
+void selectionSort(char arr[],int n){
     for(int i=0;i<n-1;i++){
         int mini = i;
 
@@ -12,7 +12,7 @@ void selectionSort(int arr[],int n){
         arr[i] = temp;
     }
 }
-void printArray(int arr[n],int n){
+void printArray(char arr[n],int n){
     for(int i=0;i<n;i++){
         printf("%s\n",arr[i]);
     }
