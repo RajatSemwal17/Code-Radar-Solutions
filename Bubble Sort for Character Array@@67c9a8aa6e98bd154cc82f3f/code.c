@@ -15,22 +15,3 @@ void bubbleSort(char arr[], int n){
     }
     
 }
-int main(){
-    int n;
-    scanf("%d",&n);
-
-    char arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        scanf(" %c",&arr[i]);
-    }
-    
-    bubbleSort(arr,n);
-
-    printf("Sorted array: ");
-    for (int i = 0; i < n; i++)
-    {
-        printf("%c ",arr[i]);
-    }
-    
-}
