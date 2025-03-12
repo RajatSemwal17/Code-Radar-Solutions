@@ -6,7 +6,7 @@ void insertionSort(char arr[][100],int n){
             char temp[100];
             strcpy(temp,arr[j-1]);
             strcpy(arr[j-1],arr[j]);
-            strcpy(tarr[j],temp);
+            strcpy(arr[j],temp);
             j--;
         }
     }
