@@ -4,7 +4,7 @@ void RightRotate(int arr[], int d,int n){
     d = d%n;
     int temp[n];
     for(int i=0;i<d;i++){
-        temp[i] = arr[n-d+1];
+        temp[i] = arr[n-d+i];
     }
     for(int i=d;i<n;i++){
         temp[i] = arr[i-d];
