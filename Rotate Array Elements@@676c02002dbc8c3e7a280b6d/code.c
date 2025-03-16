@@ -10,7 +10,7 @@ void RightRotate(int arr[], int d,int n){
         temp[i] = arr[i-d];
     }
     for(int i=0;i<n;i++){
-        temp[i] = arr[i];
+        arr[i] = temp[i];
     }
 }
 int main(){
