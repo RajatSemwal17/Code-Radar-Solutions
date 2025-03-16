@@ -1,34 +1,29 @@
-#include <stdio.h>
+#include<stdio.h>
 
-void rotateArray(int arr[], int n, int rotate) {
-    rotate = rotate+1;
-    for (int i = rotate; i < n; i++) {
-        printf("%d\n", arr[i]);
+void RightRotate(int arr[], int d){
+    d = d%n;
+    int temp[n];
+    for(int i=0;i<d;i++){
+        temp[i] = arr[n-i+1];
     }
-    for (int i = 0; i < rotate; i++) {
-        printf("%d\n", arr[i]);
+    for(int i=d;i<n;i++){
+        temp[i] = arr[i-d];
+    }
+    for(int i=0;i<n;i++){
+        temp[i] = arr[i];
     }
 }
-
-int main() {
-    int n, rotate;
-
-    scanf("%d", &n);
-
+int main(){
+    int n;
+    RightRotate(arr,d);
+    scanf("%d",&n);
     int arr[n];
-
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    scanf("%d",&d);
+    for(int i=0;i<n;i++){
+        printf("%d\n",arr[i]);
     }
 
-    scanf("%d", &rotate);
-
-    if (rotate < 0 || rotate >= n) {
-        printf("Invalid index!\n");
-        return 1;
-    }
-
-    rotateArray(arr, n, rotate);
-
-    return 0;
 }
