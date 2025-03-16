@@ -7,7 +7,7 @@ int MedianOfArray(int arr[],int n){
         sum+=arr[i];
         median = sum/n;
     }
-    return median
+    return median;
 }
 int main(){
     int n;
