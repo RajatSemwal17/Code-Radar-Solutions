@@ -14,13 +14,14 @@ void RightRotate(int arr[], int d,int n){
     }
 }
 int main(){
-    int n;
+    int n,d;
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
     scanf("%d",&d);
+
     RightRotate(arr,d,n);
     for(int i=0;i<n;i++){
         printf("%d\n",arr[i]);
