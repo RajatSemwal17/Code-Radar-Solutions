@@ -1,10 +1,11 @@
 #include<stdio.h>
 
 int MedianOfArray(int arr[],int n){
+    int median;
     int sum=0;
     for(int i=0;i<n;i++){
         sum+=arr[i];
-        int median = sum/n;
+        median = sum/n;
     }
     return median
 }
