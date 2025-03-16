@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int MedianOfArray(int arr[n],int n){
+int MedianOfArray(int arr[],int n){
     int sum=0;
     for(int i=0;i<n;i++){
         sum+=arr[i];
