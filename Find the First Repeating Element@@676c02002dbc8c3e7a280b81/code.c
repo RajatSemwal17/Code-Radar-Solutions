@@ -1,14 +1,14 @@
 #include<stdio.h>
 
 int firstRepeatingEl(int arr[], int n){
-    int first = 0;
+    int visited[10000] = {0};
     for(int i=0;i<n;i++){
-        if(arr[i] == arr[i+1]){
-            first = arr[i];
-            break;
+        if(visited[arr[i]] == 1){
+            return arr[i];
         }
+        visited[arr[i]] == 1;
     }
-    return first;
+    return -1;
 }
 int main(){
     int n;
@@ -17,5 +17,14 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    printf("%d",firstRepeatingEl(arr,n));
+    int result = firstRepeatingEl(arr,,n);
+    if(result==-1){
+        printf("-1");
+    }
+    else{
+        printf("%d",result);
+    }
 }
+
+
+
