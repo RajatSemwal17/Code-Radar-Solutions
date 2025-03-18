@@ -12,6 +12,7 @@ int selectionSort(int n,int arr[]){
         arr[x] = arr[i];
         arr[i] = temp;
     }
+    return arr[n-1]*arr[n-2];
 }
 int main(){
     int n;
@@ -20,8 +21,5 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    selectionSort(n,arr);
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
+    printf("%d",selectionSort(n,arr));
 }
