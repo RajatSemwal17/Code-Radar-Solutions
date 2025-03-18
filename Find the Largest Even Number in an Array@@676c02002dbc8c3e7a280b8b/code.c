@@ -23,6 +23,6 @@ int main(){
         printf("%d",function(n,arr));
     }
     else{
-        printf("-1");
+        printf("0");
     }
 }
