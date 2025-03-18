@@ -22,9 +22,9 @@ int main(){
     }
     int largestEven = function(n,arr);
     if(largestEven == INT_MIN){
-        printf("%d",largestEven);
+        printf("-1");
     }
     else{
-        printf("-1");
+        printf("%d",largestEven);
     }
 }
