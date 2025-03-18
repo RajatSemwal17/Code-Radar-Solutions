@@ -2,9 +2,9 @@
 
 int selectionSort(int n,int arr[]){
     for(int i=0;i<n;i++){
-        int x = i;
+        int x = i+1;
         for(int j=i;j<n;j++){
-            if(arr[j] < arr[x]){
+            if(arr[j] > arr[x]){
                 x=j;
             }
         }
@@ -12,7 +12,7 @@ int selectionSort(int n,int arr[]){
         arr[x] = arr[i];
         arr[i] = temp;
     }
-    //return arr[n-1]*arr[n-2];
+    return arr[n-1]*arr[n-2];
 }
 int main(){
     int n;
@@ -20,10 +20,6 @@ int main(){
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-    }
-    selectionSort(n,arr);
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
     }
     printf("%d",selectionSort(n,arr));
 }
