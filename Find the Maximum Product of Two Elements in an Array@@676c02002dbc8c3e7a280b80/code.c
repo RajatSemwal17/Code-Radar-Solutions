@@ -1,26 +1,27 @@
-#include <stdio.h>
+#include<stdio>
 
-int main() {
+int selectionSort(int n,int arr[]){
+    for(int i=0;i<n;i++){
+        int x = i;
+        for(int j=i;j<n;j++){
+            if(arr[j] > arr[x]){
+                x=j;
+            }
+        }
+        int temp = arr[x];
+        arr[x] = arr[i];
+        arr[i] = temp;
+    }
+}
+int main(){
     int n;
     scanf("%d",&n);
-    int largest,largest2nd;
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    largest=0;
+    selectionSort(n,arr);
     for(int i=0;i<n;i++){
-        if(arr[i] > largest){
-            largest = arr[i];
-        }
+        scanf("%d ",arr[i]);
     }
-    largest2nd=0;
-    for(int i=0;i<n;i++){
-        if(arr[i] > largest2nd && arr[i] < largest){
-            largest2nd = arr[i];
-        }
-    }
-    printf("%d",largest2nd*largest);
-
-    return 0;
 }
