@@ -10,11 +10,11 @@ int maxFrequency(int arr[],int n){
     int maxFreq=0,maxEle = -1;
     
     for(int i=0;i<MAX;i++){
-        if(hash[i] > 0){
+        // if(hash[i] > 0){
             if(hash[i] > maxFreq)
             {maxFreq = hash[i];
             maxEle = i;}
-        }
+        
     }
     printf("%d",maxEle);
 }
