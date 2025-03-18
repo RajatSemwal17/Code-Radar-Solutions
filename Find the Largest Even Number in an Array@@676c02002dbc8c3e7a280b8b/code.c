@@ -22,7 +22,7 @@ int main(){
     }
     int largestEven = function(n,arr);
     if(largestEven == INT_MIN){
-        printf("%d",function(n,arr));
+        printf("%d",largestEven);
     }
     else{
         printf("-1");
