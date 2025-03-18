@@ -7,7 +7,7 @@ int maxFrequency(int arr[],int n){
         hash[arr[i]]++;
     }
 
-    int maxFreq=0,maxEle = 0;
+    int maxFreq=0,maxEle = -1;
     
     for(int i=0;i<MAX;i++){
         if(hash[i] > 0){
