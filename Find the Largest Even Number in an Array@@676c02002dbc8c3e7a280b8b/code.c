@@ -19,10 +19,10 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(function){
-        printf("%d",function(n,arr));
+    if(function(n,arr)==-1){
+        printf("-1");
     }
     else{
-        printf("-1");
+        printf("%d",function(n,arr));
     }
 }
