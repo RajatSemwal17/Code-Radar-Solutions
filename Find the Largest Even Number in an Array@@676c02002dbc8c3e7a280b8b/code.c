@@ -1,7 +1,8 @@
+#include<limits.h>
 #include<stdio.h>
 
 int function(int n , int arr[]){
-    int largest=0;
+    int largest=INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i]%2==0){
             if(arr[i] > largest){
