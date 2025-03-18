@@ -6,7 +6,7 @@ int firstRepeatingEl(int arr[], int n){
         if(visited[arr[i]] == 1){
             return arr[i];
         }
-        visited[arr[i]] == 1;
+        visited[arr[i]] = 1;
     }
     return -1;
 }
