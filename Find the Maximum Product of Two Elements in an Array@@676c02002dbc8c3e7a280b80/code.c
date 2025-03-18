@@ -1,4 +1,4 @@
-#include<stdio>
+#include<stdio.h>
 
 int selectionSort(int n,int arr[]){
     for(int i=0;i<n;i++){
