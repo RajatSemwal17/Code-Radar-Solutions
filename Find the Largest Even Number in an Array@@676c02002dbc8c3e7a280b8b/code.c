@@ -20,7 +20,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    if(function(n,arr)){
+    int largestEven = function(n,arr);
+    if(largestEven == INT_MIN){
         printf("%d",function(n,arr));
     }
     else{
