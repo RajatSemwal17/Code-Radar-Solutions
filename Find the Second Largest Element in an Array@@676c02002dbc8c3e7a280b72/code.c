@@ -42,7 +42,7 @@ void secondLargest2(int arr[],int n){
     for(int i=0;i<n;i++){
         if(arr[i]>seclar && seclar!=largest){
             seclar = arr[i];
-            found = 1
+            found = 1;
         }
     }
     if(found){
