@@ -30,7 +30,7 @@ void secondLargest(int arr[],int n,int largest){
 
 void secondLargest2(int arr[],int n){
     int seclar = arr[0];
-    largest = arr[0];
+    int largest = arr[0];
     for(int i=0;i<n;i++){
         if(arr[i] > largest){
             seclar = largest;
