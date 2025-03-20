@@ -1,20 +1,32 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 
-char ReverseString(char input[]){
-    char temp;
-    int len = strlen(input);
-    for(int i=0;i<len/2;i++){
-        temp = input[i];
-        input[i] = input[len-i-1];
-        input[len-i-1] = temp;
+void reverseWord(char *start, char *end){
+    while(start<end){
+        char temp = *start;
+        *start = *end;
+        *end = temp;
+        start++;
+        end--;
     }
 }
 
-int main() {
-    char input[30],input2[30];
-    scanf("%s %s",input,input2);
-    ReverseString(input);
-    printf("%s",input);
-    return 0;
+void reverseEachWord(char input[]){
+    int len = strlen(input);
+    int start = 0;
+    for(int i=0;i<=len;i++){
+        if(input[i] == ' '){
+            reverseWord(&input[start] , &input[i-1])
+            start = i+1;
+        }
+    }
+}
+
+int main(){
+    char name[30];
+    char a;
+    fgets(name,sizeof(name),stdin);
+    scanf("%c",&a);
+    reverseEachWord(name);
+    printf("%s",name);
 }
