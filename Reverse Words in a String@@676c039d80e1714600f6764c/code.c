@@ -40,7 +40,7 @@ int main() {
     
     reverseEachWord(name);
     
-    printf("Reversed words: %s\n", name);
+    printf("%s", name);
     
     return 0;
 }
