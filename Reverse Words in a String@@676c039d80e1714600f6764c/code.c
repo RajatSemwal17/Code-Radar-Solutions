@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 void reverseWord(char *start, char *end) {
     while (start < end) {
@@ -24,14 +23,24 @@ void reverseEachWord(char input[]) {
     }
 }
 
-
-
-int main(){
+int main() {
     char name[30];
     char a;
-    fgets(name,sizeof(name),stdin);
+    
+    // Read the full line
+    
+    fgets(name, sizeof(name), stdin);
+    
+    // Remove trailing newline from fgets()
     name[strcspn(name, "\n")] = '\0';
-    scanf("%c",&a);
+    
+    // Read a single character
+    
+    scanf(" %c", &a);  // Adding space before %c to ignore the newline
+    
     reverseEachWord(name);
-    printf("%s",name);
+    
+    printf("Character entered: %c\n", a);
+    
+    return 0;
 }
