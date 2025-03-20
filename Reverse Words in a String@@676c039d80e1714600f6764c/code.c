@@ -16,7 +16,7 @@ void reverseEachWord(char input[]){
     int start = 0;
     for(int i=0;i<=len;i++){
         if(input[i] == ' '){
-            reverseWord(&input[start] , &input[i-1])
+            reverseWord(&input[start] , &input[i-1]);
             start = i+1;
         }
     }
