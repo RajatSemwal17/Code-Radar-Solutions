@@ -60,8 +60,9 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
-    int largest;
-    secondLargest(arr,n,largest);
+    // int largest;
+    // secondLargest(arr,n,largest);
+    secondLargest2(arr,n);
     return 0;
 }
 
