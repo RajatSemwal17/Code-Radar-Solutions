@@ -30,6 +30,7 @@ int main(){
     char name[30];
     char a;
     fgets(name,sizeof(name),stdin);
+    name[strcspn(name, "\n")] = '\0';
     scanf("%c",&a);
     reverseEachWord(name);
     printf("%s",name);
