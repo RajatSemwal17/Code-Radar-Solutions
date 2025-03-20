@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<limits.h>
 
 void secondLargest(int arr[],int n,int largest){
     int seclar = arr[0];
@@ -29,8 +30,8 @@ void secondLargest(int arr[],int n,int largest){
 #include <stdio.h>
 
 void secondLargest2(int arr[],int n){
-    int seclar = arr[0];
-    int largest = arr[0];
+    int seclar = INT_MIN;
+    int largest = INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i] > largest){
             seclar = largest;
@@ -38,18 +39,16 @@ void secondLargest2(int arr[],int n){
         }
     }
 
-    int found=0;
     for(int i=0;i<n;i++){
         if(arr[i]>seclar && arr[i]!=largest){
             seclar = arr[i];
-            found = 1;
         }
     }
-    if(found){
-        printf("%d",seclar);
+    if(seclar == INT_MIN){
+        printf("-1");
     }
     else{
-        printf("-1");
+        printf("%d",seclar);
     }
 }
 
