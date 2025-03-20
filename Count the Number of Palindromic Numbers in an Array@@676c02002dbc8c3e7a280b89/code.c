@@ -2,7 +2,7 @@
 int Palindrome(int n){
     int original = n;
     int reverse=0;
-    for(int i=0;i<n;i++){
+    while(n>0){
         int digit = n%10;
         reverse = reverse*10 + digit;
         n/=10;
