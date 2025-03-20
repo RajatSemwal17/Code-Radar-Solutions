@@ -3,7 +3,7 @@
 
 char ReverseString(char input[]){
     char temp;
-    int len = strlen(input)
+    int len = strlen(input);
     for(int i=0;i<len/2;i++){
         temp = input[i];
         input[i] = input[len-i-1];
