@@ -1,8 +1,9 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
-void reverseWord(char *start, char *end){
-    while(start<end){
+void reverseWord(char *start, char *end) {
+    while (start < end) {
         char temp = *start;
         *start = *end;
         *end = temp;
@@ -11,16 +12,19 @@ void reverseWord(char *start, char *end){
     }
 }
 
-void reverseEachWord(char input[]){
+void reverseEachWord(char input[]) {
     int len = strlen(input);
     int start = 0;
-    for(int i=0;i<=len;i++){
-        if(input[i] == ' '){
-            reverseWord(&input[start] , &input[i-1]);
-            start = i+1;
+
+    for (int i = 0; i <= len; i++) {
+        if (input[i] == ' ' || input[i] == '\0') {  // Found word boundary
+            reverseWord(&input[start], &input[i - 1]);
+            start = i + 1;  // Move to next word
         }
     }
 }
+
+
 
 int main(){
     char name[30];
