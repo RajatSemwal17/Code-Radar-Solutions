@@ -40,7 +40,6 @@ int main() {
     
     reverseEachWord(name);
     
-    printf("Character entered: %c\n", a);
-    
+    printf("%s", name);
     return 0;
 }
