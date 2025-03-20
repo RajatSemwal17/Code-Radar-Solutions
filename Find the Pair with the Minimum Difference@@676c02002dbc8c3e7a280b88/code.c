@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<limits.h>
+#include<stdlib.h>
 void pairWithMinDifference(int arr[], int n){
     int minDiff = INT_MAX;
     int index1 = -1, index2 = -1;
