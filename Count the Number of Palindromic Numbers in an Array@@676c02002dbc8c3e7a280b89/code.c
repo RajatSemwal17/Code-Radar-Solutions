@@ -1,5 +1,5 @@
 #include<stdio.h>
-int Palindrome(int arr[], int n){
+int Palindrome(int n){
     int original = n;
     int reverse=0;
     for(int i=0;i<n;i++){
@@ -13,7 +13,7 @@ int Palindrome(int arr[], int n){
 int countNoOfPalindromicNumbers(int n, int arr[]){
     int count=0;
     for(int i=0;i<n;i++){
-        if(Palindrome(arr,n)){
+        if(Palindrome(arr[i])){
             count++;
         }
     }
