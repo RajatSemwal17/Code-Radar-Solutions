@@ -15,7 +15,9 @@ void pairWithMinDifference(int arr[], int n){
             }
         }
     }
-    printf("%d %d",arr[index1],arr[index2]);
+    if(index1<index2) printf("%d %d",arr[index1],arr[index2]);
+    else printf("%d %d",arr[index2],arr[index1]);
+    
 }
 int main(){
     int n;
