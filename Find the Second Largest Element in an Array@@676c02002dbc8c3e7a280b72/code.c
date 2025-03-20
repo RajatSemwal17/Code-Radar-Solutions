@@ -40,7 +40,7 @@ void secondLargest2(int arr[],int n){
 
     int found=0;
     for(int i=0;i<n;i++){
-        if(arr[i]>seclar && seclar!=largest){
+        if(arr[i]>seclar && arr[i]<largest){
             seclar = arr[i];
             found = 1;
         }
