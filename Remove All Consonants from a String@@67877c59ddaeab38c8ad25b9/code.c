@@ -8,7 +8,7 @@ int main() {
     int k=0;
     int i=0;
     while(name[i]!='\0'){
-        char c = islower(str[i]);
+        char c = islower(name[i]);
         if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
             name[k++] = name[i];
         }
