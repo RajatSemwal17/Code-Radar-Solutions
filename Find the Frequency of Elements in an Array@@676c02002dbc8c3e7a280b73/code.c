@@ -38,7 +38,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int hash[100];
+    int hash[100] = {0};
     for(int i=0;i<n;i++){
         hash[arr[i]]++;
     }
