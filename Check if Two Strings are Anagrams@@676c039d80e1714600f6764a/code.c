@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int anaGrams(char str1[],char str2){
+int anaGrams(char str1[],char str2[]){
     int count[256] = {0};
 
     for(int i=0;str1[i]!='\0';i++){
