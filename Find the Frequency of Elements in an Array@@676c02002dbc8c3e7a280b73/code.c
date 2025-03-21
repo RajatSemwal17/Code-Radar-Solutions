@@ -44,7 +44,7 @@ int main(){
     }
 
     for(int i=0;i<n;i++){
-        printf("%d %d",hash[i],i);
+        printf("%d %d\n",hash[i],i);
     }
 }
 
