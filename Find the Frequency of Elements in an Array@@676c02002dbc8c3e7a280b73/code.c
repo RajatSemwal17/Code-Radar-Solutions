@@ -43,8 +43,10 @@ int main(){
         hash[arr[i]]++;
     }
 
-    for(int i=0;i<n;i++){
-        printf("%d %d\n",hash[i],i);
+    for (int i = 0; i < 100; i++) {
+        if (hash[i] > 0) {
+            printf("%d appears %d times\n", i, hash[i]);
+        }
     }
 }
 
