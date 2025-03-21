@@ -12,7 +12,6 @@ void pairOfSum(int arr[],int n,int sum){
             }
         }
     }
-    return -1;
 }
 
 int main() {
