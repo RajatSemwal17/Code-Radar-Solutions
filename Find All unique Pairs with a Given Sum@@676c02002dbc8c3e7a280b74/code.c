@@ -8,10 +8,11 @@ void pairOfSum(int arr[],int n,int sum){
             if(arr[i] + arr[j] == sum){
                 printf("%d %d\n",arr[i],arr[j]);
                 // found=1;
-                return;
+                // return;
             }
         }
     }
+    return -1;
 }
 
 int main() {
