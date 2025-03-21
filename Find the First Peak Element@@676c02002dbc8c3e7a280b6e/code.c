@@ -11,9 +11,9 @@ int firstMaxNumber(int arr[],int n){
             break;
         }
     }
-    if(equals){
-        return -1;
-    }
+    // if(equals){
+    //     return -1;
+    // }
     else if(arr[0] >= arr[1]){
         return arr[0];
     }
