@@ -31,6 +31,7 @@
 
 
 #include<stdio.h>
+#define MAX
 int main(){
     int n;
     scanf("%d",&n);
@@ -38,12 +39,12 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int hash[100] = {0};
+    int hash[10000] = {0};
     for(int i=0;i<n;i++){
         hash[arr[i]]++;
     }
 
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 10000; i++) {
         if (hash[i] > 0) {
             printf("%d %d\n", i, hash[i]);
         }
