@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <stdbool.h>
-#define MAX 100001
+
+#define MAX 100001  // Assumption of max positive value (modify for negatives)
 
 void pairOfSum(int arr[], int n, int sum) {
-    bool printed[MAX] = {false}; 
+    bool hash[MAX] = {false};  // Tracks visited numbers
 
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == sum) {
-                if (!printed[arr[i]] || !printed[arr[j]]) {
+                // Print only if this exact pair hasn't been printed before
+                if (!hash[arr[i]] && !hash[arr[j]]) {
                     printf("Pair: %d %d\n", arr[i], arr[j]);
-                    printed[arr[i]] = true;
-                    printed[arr[j]] = true;
+                    hash[arr[i]] = true;
+                    hash[arr[j]] = true;
                 }
             }
         }
@@ -19,19 +21,16 @@ void pairOfSum(int arr[], int n, int sum) {
 }
 
 int main() {
-    int n,sum;
-    scanf("%d",&n);
+    int n, sum;
+    scanf("%d", &n);
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
-    scanf("%d",&sum);
-    pairOfSum(arr,n,sum);
+
+    scanf("%d", &sum);
+    pairOfSum(arr, n, sum);
+
     return 0;
 }
-
-
-
-
-
-
