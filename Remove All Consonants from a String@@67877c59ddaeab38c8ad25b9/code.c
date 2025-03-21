@@ -2,19 +2,26 @@
 #include <string.h>
 #include <ctype.h>
 
+void removeConsonants(char input[]) {
+    int j = 0;
+    for (int i = 0; input[i] != '\0'; i++) {
+        char ch = tolower(input[i]);
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || input[i] == ' ') {
+            input[j++] = input[i];  // Keep vowels and spaces
+        }
+    }
+    input[j] = '\0';  // Null-terminate the modified string
+}
+
 int main() {
     char name[100];
-    fgets(name,sizeof(name),stdin);
-    int k=0;
-    int i=0;
-    while(name[i]!='\0'){
-        char c = islower(name[i]);
-        if(c=='a' || c=='e' || c=='i' || c=='o' || c=='u'){
-            name[k++] = name[i];
-        }
-        i++;
-    }
-    str[k] = '\0';
-    printf("%s",name);
+
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';  // Remove newline
+
+    removeConsonants(name);
+
+    printf("%s\n", name);
+
     return 0;
 }
