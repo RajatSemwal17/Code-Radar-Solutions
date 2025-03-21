@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #define MAX 100001
 
 void pairOfSum(int arr[], int n, int sum) {
