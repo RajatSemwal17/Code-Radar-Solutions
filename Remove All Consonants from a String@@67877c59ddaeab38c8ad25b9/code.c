@@ -10,7 +10,7 @@ void removeConsonants(char input[]) {
             input[j++] = input[i];  // Keep vowels and spaces
         }
     }
-    input[j] = '\0';  // Null-terminate the modified string
+    // input[j] = '\0';  // Null-terminate the modified string
 }
 
 int main() {
