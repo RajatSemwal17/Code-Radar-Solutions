@@ -1,12 +1,12 @@
 #include <stdio.h>
+#define MAX 100001
 
 void pairOfSum(int arr[], int n, int sum) {
-    bool printed[MAX] = {false}; // To track already printed pairs
+    bool printed[MAX] = {false}; 
 
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) {
             if (arr[i] + arr[j] == sum) {
-                // Ensure we print only unique pairs (based on value, not index)
                 if (!printed[arr[i]] || !printed[arr[j]]) {
                     printf("Pair: %d %d\n", arr[i], arr[j]);
                     printed[arr[i]] = true;
