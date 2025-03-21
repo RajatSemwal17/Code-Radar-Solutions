@@ -45,7 +45,7 @@ int main(){
 
     for (int i = 0; i < 100; i++) {
         if (hash[i] > 0) {
-            printf("%d appears %d times\n", i, hash[i]);
+            printf("%d %d\n", i, hash[i]);
         }
     }
 }
