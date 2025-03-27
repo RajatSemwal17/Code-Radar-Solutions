@@ -4,6 +4,6 @@ void factorialRange(int start,int end){
         for(int j = 1;j<=i;j++){
             product*=j;
         }
-        printf("%d ",product);
+        printf("%d\n",product);
     }
 }
