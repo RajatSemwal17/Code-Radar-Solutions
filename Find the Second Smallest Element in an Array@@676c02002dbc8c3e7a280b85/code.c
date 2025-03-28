@@ -22,7 +22,7 @@ int main(){
             secSml = arr[i];
         }
     }
-    if(!secSml){
+    if(secSml == -1){
     printf("-1");
     }    
     else{
