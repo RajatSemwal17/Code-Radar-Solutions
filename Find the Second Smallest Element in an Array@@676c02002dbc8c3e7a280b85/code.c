@@ -14,7 +14,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(arr[i] < Sml){
             secSml = Sml;
-            Sml = arr[i]
+            Sml = arr[i];
         }
     }
     for(int i=0;i<n;i++){
