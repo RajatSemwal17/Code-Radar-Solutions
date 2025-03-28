@@ -9,7 +9,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int secSml = INT_MAX , Sml = INT_MIN;
+    int secSml = INT_MAX , Sml = INT_MAX;
 
     for(int i=0;i<n;i++){
         if(arr[i] < Sml){
