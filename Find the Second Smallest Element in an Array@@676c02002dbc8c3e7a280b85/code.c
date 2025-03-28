@@ -15,7 +15,7 @@ int secSml(int arr[], int n){
             secSml = arr[i];
         }
     }
-    return secSml;
+    return secSml==INT_MAX ? -1 : secSml;
 }
 int main(){
     int n;
@@ -26,7 +26,5 @@ int main(){
     }
 
     int secSmll = secSml(arr,n);
-
-    if(!secSmll) printf("-1");
-    else printf("%d",secSmll);
+    printf("%d",secSmll);
 }
