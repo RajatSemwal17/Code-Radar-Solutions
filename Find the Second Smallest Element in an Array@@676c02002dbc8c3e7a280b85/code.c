@@ -26,12 +26,7 @@ int main(){
     }
 
     int secSmll = secSml(arr,n);
-    
-    if(secSmll == -1){
-    printf("-1");
-    }    
-    else{
-    printf("%d",secSml);
 
-    }
+    if(!secSmll) printf("-1");
+    else printf("%d",secSmll);
 }
