@@ -22,6 +22,11 @@ int main(){
             secSml = arr[i];
         }
     }
+    if(!secSml){
+    printf("-1");
+    }    
+    else{
     printf("%d",secSml);
-    
+
+    }
 }
