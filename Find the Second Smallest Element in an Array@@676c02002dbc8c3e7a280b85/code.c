@@ -18,7 +18,7 @@ int main(){
         }
     }
     for(int i=0;i<n;i++){
-        if(arr[i] >arr[i] && arr[i] != Sml ){
+        if(arr[i] < secSml && arr[i] != Sml ){
             secSml = arr[i];
         }
     }
