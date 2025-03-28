@@ -25,7 +25,8 @@ int main(){
         scanf("%d",&arr[i]);
     }
 
-    int secSmll = secSml(arr,n)
+    int secSmll = secSml(arr,n);
+    
     if(secSmll == -1){
     printf("-1");
     }    
