@@ -3,10 +3,10 @@
 #include<stdlib.h>
 
 int sort(int arr[],int n){
-    int x;
-    for(int i=0;i<n;i++){
-        x = i+1;
-        for(int j=i;j<n;j++){
+    for(int i=0;i<n-1;i++){
+       int x = i;
+        for(int j=i+1;j<n;j++){
+            if(arr[j] < arr[x])
             x = j;
         }
         int temp = arr[x];
