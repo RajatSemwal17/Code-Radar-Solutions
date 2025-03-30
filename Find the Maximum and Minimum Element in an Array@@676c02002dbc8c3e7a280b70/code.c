@@ -13,6 +13,7 @@ void MaxAndMin(int arr[],int n){
             max = arr[i];
         }
     }
+    printf("%d %d",min,max);
 }
 
 int main() {
@@ -22,9 +23,6 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
-    int max,min;
     MaxAndMin(arr,n);
-    printf("%d ",min);
-    printf("%d",max);
     return 0;
 }
