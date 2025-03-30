@@ -14,7 +14,7 @@ void pairWithMinDifference(int arr[],int n){
     int mini = INT_MAX;
     int a,b;
     for(int i=0;i<n;i++){
-        for(int j=i;j<n;j++){
+        for(int j=i+1;j<n;j++){
     int diff = abs(arr[i]-arr[j]);
             if(diff < mini){
                 mini = diff;
