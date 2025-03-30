@@ -56,20 +56,30 @@
 
 
 
-#define MAX 100000
 int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
 
-    int visited[100];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+
+    int visited[n];
     for(int i=0;i<n;i++){
         visited[i] = 0;
     }
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
+        int count = 0;
+        for(int j=i;j<n;j++){
+            if(arr[i] == arr[j]){
+                count++;
+                visited[j] = 1;
+                break;
+            }
+        }
+        printf("%d %d",arr[i],count);
     }
-    
 }
 
 
