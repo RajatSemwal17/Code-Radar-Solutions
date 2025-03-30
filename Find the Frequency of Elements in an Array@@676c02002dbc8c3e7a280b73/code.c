@@ -77,7 +77,7 @@ int main(){
             if(arr[i] == arr[j]){
                 count++;
                 visited[j] = 1;
-                break;
+                // break;
             }
         }
         printf("%d %d",arr[i],count);
