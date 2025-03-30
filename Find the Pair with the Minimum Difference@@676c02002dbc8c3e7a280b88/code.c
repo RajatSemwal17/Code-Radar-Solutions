@@ -8,8 +8,10 @@ void pairWithMinDifference(int arr[],int n){
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
             if(arr[i]-arr[j] < mini){
+                mini = arr[i];
                 a = i;
                 b = j;
+                
             }
             printf("%d %d\n",a,b);
         }
