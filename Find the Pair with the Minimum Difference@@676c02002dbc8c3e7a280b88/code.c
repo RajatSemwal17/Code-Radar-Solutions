@@ -39,7 +39,6 @@ void pairWithMinDifference(int arr[],int n){
         found = 1;
     }
     if(found){printf("%d %d",a,b);}
-    else if (a==0 || b==0) printf("-1");
 }
 
 int main(){
@@ -49,5 +48,6 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    if(n==1) printf("-1");
     pairWithMinDifference(arr,n);
 }
