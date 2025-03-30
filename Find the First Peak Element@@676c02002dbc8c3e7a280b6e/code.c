@@ -5,12 +5,12 @@ int firstMaxNumber(int arr[],int n){
         return arr[0];
     }
     int equals = 1;
-    // for(int i=0;i<n;i++){
-    //     if(arr[i]!=arr[0]){
-    //         equals=0;
-    //         break;
-    //     }
-    // }
+    for(int i=0;i<n;i++){
+        if(arr[i]!=arr[0]){
+            equals=0;
+            break;
+        }
+    }
     if(equals){
         return -1;
     }
