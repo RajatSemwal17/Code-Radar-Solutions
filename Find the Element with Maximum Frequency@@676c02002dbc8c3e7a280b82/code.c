@@ -21,5 +21,5 @@ int main(){
             maxi = arr[i];
         }
     }
-    printf("%d %d",maxi , maxiFreq);
+    printf("%d",maxiFreq);
 }
