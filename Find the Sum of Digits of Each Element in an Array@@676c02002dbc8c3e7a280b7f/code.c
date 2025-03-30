@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int sumOfDigit(int n){
-    // n=abs(n);
+    n=abs(n);
     int sum=0;
     while(n>0){
         sum+=n%10;
