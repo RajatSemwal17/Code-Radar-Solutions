@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <limits.h>
 
-void MaxAndMin(int arr[],int n,int *max,int *min){
-    *min = INT_MIN;
-    *max = INT_MIN;
+void MaxAndMin(int arr[],int n,int max,int min){
+    min = INT_MIN;
+    max = INT_MIN;
 
     for(int i=1;i<n;i++){
-        if(arr[i]< *min){
-            *min = arr[i];
+        if(arr[i]< min){
+            min = arr[i];
         }
-        if(arr[i] > *max){
-            *max = arr[i];
+        if(arr[i] > max){
+            max = arr[i];
         }
     }
 }
@@ -23,7 +23,7 @@ int main() {
         scanf("%d ",&arr[i]);
     }
     int max,min;
-    MaxAndMin(arr,n,&max,&min);
+    MaxAndMin(arr,n,max,min);
     printf("%d ",min);
     printf("%d",max);
     return 0;
