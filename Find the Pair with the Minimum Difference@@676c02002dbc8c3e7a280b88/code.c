@@ -31,14 +31,14 @@ void pairWithMinDifference(int arr[],int n){
             }
         }
     }
-
-    if(a==0 || b==0)printf("-1");
+    int found = 1;
     if (a > b) {
         int temp = a;
         a = b;
         b = temp;
-    printf("%d %d",a,b);
+        found = 1;
     }
+    if(found){printf("%d %d",a,b);}
 }
 
 int main(){
