@@ -13,9 +13,8 @@ int replaceWithGreatest(int arr[], int n){
 }
 int main() {
     int n;
-    scanf("%d",&arr[i]);
+    scanf("%d",&n);
     int arr[n];
-    int n = sizeof(arr) / sizeof(arr[0]);
 
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
