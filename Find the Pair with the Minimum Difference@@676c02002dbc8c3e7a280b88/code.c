@@ -2,15 +2,22 @@
 #include<limits.h>
 #include<stdlib.h>
 
-
-int gcd(int a,int b){
-    if(b==0){
-        return a;
+int sort(int arr[n],int n){
+    int x;
+    for(int i=0;i<n;i++){
+        x = i;
+        for(int j=i;j<n;j++){
+            x = j;
+        }
+        int temp = arr[x];
+        arr[x] = arr[i];
+        arr[i] = temp;
     }
-    return gcd(b,a%b);
 }
 
+
 void pairWithMinDifference(int arr[],int n){
+    sort(arr,n);
     int mini = INT_MAX;
     int a,b;
     for(int i=0;i<n;i++){
