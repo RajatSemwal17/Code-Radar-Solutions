@@ -9,8 +9,8 @@ void pairWithMinDifference(int arr[],int n){
         for(int j=0;j<n;j++){
             if( abs(arr[i]-arr[j]) < mini){
                 mini = abs(arr[i]-arr[j]);
-                a = i;
-                b = j;
+                a = arr[i]
+                b = arr[j];
                 
             }
         }
