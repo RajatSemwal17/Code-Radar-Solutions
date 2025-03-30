@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-void MaxAndMin(int arr[],int n,int max,int min){
+void MaxAndMin(int arr[],int n){
     min = INT_MIN;
     max = INT_MIN;
 
@@ -23,7 +23,7 @@ int main() {
         scanf("%d ",&arr[i]);
     }
     int max,min;
-    MaxAndMin(arr,n,max,min);
+    MaxAndMin(arr,n);
     printf("%d ",min);
     printf("%d",max);
     return 0;
