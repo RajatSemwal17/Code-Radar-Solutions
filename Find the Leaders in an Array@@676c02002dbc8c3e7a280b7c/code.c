@@ -7,6 +7,7 @@ int leadersInArray(int arr[],int n){
         arr[i] = maxi;
         if(temp > maxi){
             maxi = temp;
+            break;
         }
     }
 }
