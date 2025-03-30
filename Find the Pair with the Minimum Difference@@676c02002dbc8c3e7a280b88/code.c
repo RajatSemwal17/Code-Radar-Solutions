@@ -2,7 +2,7 @@
 #include<limits.h>
 #include<stdlib.h>
 
-pairWithMinDifference(int arr[],int n){
+void pairWithMinDifference(int arr[],int n){
     int mini = INT_MAX;
     int a,b;
     for(int i=0;i<n;i++){
