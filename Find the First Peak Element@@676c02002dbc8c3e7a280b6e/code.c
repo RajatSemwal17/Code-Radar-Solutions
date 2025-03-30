@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int firstMaxNumber(int arr[],int n){
-    int equals = 1;
-    for(int i=0;i<n;i++){
-        if(arr[i]!=arr[0]){
-            equals=0;
-            break;
-        }
-    }
-    if(equals){
-        return -1;
-    }
+    // int equals = 1;
+    // for(int i=0;i<n;i++){
+    //     if(arr[i]!=arr[0]){
+    //         equals=0;
+    //         break;
+    //     }
+    // }
+    // if(equals){
+    //     return -1;
+    // }
     if(n==1){
         return arr[0];
     }
