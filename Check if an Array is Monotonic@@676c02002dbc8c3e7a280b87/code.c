@@ -26,8 +26,7 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int a = increasing(arr,n);
-    int b = decreasing(arr,n);
-b    if(b==1){
+    int b = decreasing(arr,n);    if(b==1){
         printf("YES");
     }
     // else if(b==1){
