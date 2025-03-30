@@ -2,7 +2,7 @@
 
 int selectionSort(int n,int arr[]){
     for(int i=0;i<n;i++){
-        int x = i+1;
+        int x = i;
         for(int j=i;j<n;j++){
             if(arr[j] > arr[x]){
                 x=j;
