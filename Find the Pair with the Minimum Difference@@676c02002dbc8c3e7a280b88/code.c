@@ -21,7 +21,7 @@ void pairWithMinDifference(int arr[],int n){
     else if(b<a){printf("%d %d\n",b,a);}
     else {printf("%d %d\n",b,a);
 }
-
+}
 int main(){
     int n;
     scanf("%d",&n);
