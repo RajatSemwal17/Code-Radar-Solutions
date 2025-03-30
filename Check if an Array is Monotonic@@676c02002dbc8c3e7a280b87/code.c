@@ -27,7 +27,7 @@ int main(){
     }
     int a = increasing(arr,n);
     int b = decreasing(arr,n);
-    if(a==1){
+    if(a==1 || b==1){
         printf("YES");
     }
     else printf("NO");
