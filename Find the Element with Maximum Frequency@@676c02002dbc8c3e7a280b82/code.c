@@ -15,7 +15,7 @@ int main(){
     }
     int maxi = -1;
     int maxiFreq = INT_MIN;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<MAX;i++){
         if(hash[i]> maxiFreq){
             maxiFreq = hash[i];
             maxi = i;
