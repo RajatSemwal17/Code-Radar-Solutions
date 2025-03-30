@@ -7,15 +7,15 @@ void pairWithMinDifference(int arr[],int n){
     int a,b;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
-            if(arr[i]-arr[j] < mini){
-                mini = arr[i];
+            if( abs(arr[i]-arr[j]) < mini){
+                mini = abs(arr[i]-arr[j]);
                 a = i;
                 b = j;
                 
             }
-            printf("%d %d\n",a,b);
         }
     }
+            printf("%d %d\n",a,b);
 }
 
 int main(){
