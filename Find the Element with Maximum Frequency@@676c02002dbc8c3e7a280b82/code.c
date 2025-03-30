@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<limits.h>
 #define MAX 10001
 
 int main(){
