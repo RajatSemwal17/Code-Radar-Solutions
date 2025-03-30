@@ -19,6 +19,7 @@ void pairWithMinDifference(int arr[],int n){
 
     if(a<b){printf("%d %d\n",a,b);}
     else if(b<a){printf("%d %d\n",b,a);}
+    else if(a==0 || b==0){printf("-1");}
     else {printf("%d %d\n",b,a);
 }
 }
