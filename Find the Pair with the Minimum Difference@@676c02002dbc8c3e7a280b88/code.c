@@ -20,6 +20,12 @@ void pairWithMinDifference(int arr[],int n){
     sort(arr,n);
     int mini = INT_MAX;
     int a,b;
+
+    for(int i=0;i<n;i++){
+        if(arr[i] == 0){
+            printf("-1");
+        }
+    }
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
     int diff = abs(arr[i]-arr[j]);
@@ -44,7 +50,6 @@ void pairWithMinDifference(int arr[],int n){
 int main(){
     int n;
     scanf("%d",&n);
-    if(n==1) printf("-1");
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
