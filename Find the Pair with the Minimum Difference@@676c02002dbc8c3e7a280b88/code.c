@@ -32,13 +32,13 @@ void pairWithMinDifference(int arr[],int n){
         }
     }
 
+    if(a==0 || b==0)printf("-1");
     if (a > b) {
         int temp = a;
         a = b;
         b = temp;
     }
     printf("%d %d",a,b);
-    if(a==0 || b==0)printf("-1");
 }
 
 int main(){
