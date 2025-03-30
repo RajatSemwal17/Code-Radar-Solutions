@@ -13,12 +13,12 @@ int main(){
     for(int i=0;i<n;i++){
         hash[arr[i]]++;
     }
-    int maxi = INT_MIN;
+    int maxi = -1;
     int maxiFreq = INT_MIN;
     for(int i=0;i<n;i++){
         if(hash[i]> maxiFreq){
             maxiFreq = hash[i];
-            maxi = arr[i];
+            maxi = i;
         }
     }
     printf("%d",maxi);
