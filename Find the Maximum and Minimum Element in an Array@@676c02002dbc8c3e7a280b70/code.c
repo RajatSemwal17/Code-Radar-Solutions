@@ -2,8 +2,8 @@
 #include <limits.h>
 
 void MaxAndMin(int arr[],int n){
-    min = INT_MIN;
-    max = INT_MIN;
+    int min = INT_MIN;
+    int max = INT_MIN;
 
     for(int i=1;i<n;i++){
         if(arr[i]< min){
