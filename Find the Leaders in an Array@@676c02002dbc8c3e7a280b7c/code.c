@@ -2,7 +2,7 @@
 
 int leadersInArray(int arr[],int n){
     int maxi = -1;
-    for(int i=0;i<n;i++){
+    for(int i=n-1;i>=0;i++){
         int temp = arr[i];
         arr[i] = maxi;
         if(temp > maxi){
