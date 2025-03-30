@@ -3,13 +3,10 @@
 int leadersInArray(int arr[],int n){
     int maxi = -1;
     for(int i=n-1;i>=0;i--){
-        int temp = arr[i];
-        arr[i] = maxi;
-        if(temp > maxi){
-            maxi = temp;
-            
+        if(arr[i] > maxi){
+            printf("%d ",arr[i])
+            maxi = arr[i];
         }
-        break;
     }
 }
 
