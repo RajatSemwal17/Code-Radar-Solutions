@@ -39,6 +39,7 @@ void pairWithMinDifference(int arr[],int n){
         found = 1;
     }
     if(found){printf("%d %d",a,b);}
+    else printf("-1");
 }
 
 int main(){
