@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int increasing(int arr[],int n){
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         if(arr[i] > arr[i+1]){
             return 0;
         }
@@ -10,7 +10,7 @@ int increasing(int arr[],int n){
 }
 
 int decreasing(int arr[],int n){
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         if(arr[i] < arr[i+1]){
             return 0;
         }
@@ -26,10 +26,14 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int a = increasing(arr,n);
-    int b = decreasing(arr,n);    if(b==1){
+    int b = decreasing(arr,n);
+b    if(a==1){
         printf("YES");
     }
-    // else if(b==1){
-    //     printf("YES");
-    // }
+    else if(b==1){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
 }
