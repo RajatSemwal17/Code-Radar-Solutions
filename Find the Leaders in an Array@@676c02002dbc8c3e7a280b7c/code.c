@@ -4,7 +4,7 @@ void leadersInArray(int arr[],int n){
     int maxi = -1;
     for(int i=n-1;i>=0;i--){
         if(arr[i] > maxi){
-            printf("%d ",arr[i])
+            printf("%d ",arr[i]);
             maxi = arr[i];
         }
     }
@@ -18,5 +18,4 @@ int main(){
         scanf("%d",&arr[i]);
     }
     leadersInArray(arr,n);
-    
 }
