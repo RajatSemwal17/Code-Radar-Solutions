@@ -6,7 +6,7 @@ void pairWithMinDifference(int arr[],int n){
     int mini = INT_MAX;
     int a,b;
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+        for(int j=i+1;j<n;j++){
             if( abs(arr[i]-arr[j]) < mini){
                 mini = abs(arr[i]-arr[j]);
                 a = arr[i];
