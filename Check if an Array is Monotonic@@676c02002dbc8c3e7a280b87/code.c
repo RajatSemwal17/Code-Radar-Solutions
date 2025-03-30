@@ -27,10 +27,10 @@ int main(){
     }
     int a = increasing(arr,n);
     int b = decreasing(arr,n);
-    if(a==1){
+b    if(b==1){
         printf("YES");
     }
-    else if(b==1){
-        printf("YES");
-    }
+    // else if(b==1){
+    //     printf("YES");
+    // }
 }
