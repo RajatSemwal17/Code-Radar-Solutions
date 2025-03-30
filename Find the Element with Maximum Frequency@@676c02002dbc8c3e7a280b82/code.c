@@ -15,6 +15,6 @@ int main(){
 
     for(int i=0;i<n;i++){
         if(hash[i]>0)
-        printf("%d %d",arr[i],hash[i]);
+        printf("%d %d\n",arr[i],hash[i]);
     }
 }
