@@ -1,9 +1,6 @@
 #include <stdio.h>
 
 int firstMaxNumber(int arr[],int n){
-    if(n==1){
-        return arr[0];
-    }
     int equals = 1;
     for(int i=0;i<n;i++){
         if(arr[i]!=arr[0]){
@@ -13,6 +10,9 @@ int firstMaxNumber(int arr[],int n){
     }
     if(equals){
         return -1;
+    }
+    if(n==1){
+        return arr[0];
     }
     else if(arr[0] >= arr[1]){
         return arr[0];
