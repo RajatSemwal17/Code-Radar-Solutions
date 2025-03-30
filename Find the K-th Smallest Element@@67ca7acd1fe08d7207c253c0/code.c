@@ -13,5 +13,8 @@ int sort(int arr[], int n){
 
 int kthSmallest(int arr[], int n,int k){
     sort(arr,n);
+    if(k>n){
+        return -1;
+    }
     return arr[k-1];
 }
