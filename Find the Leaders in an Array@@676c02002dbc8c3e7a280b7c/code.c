@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int leadersInArray(int arr[],int n){
+void leadersInArray(int arr[],int n){
     int maxi = -1;
     for(int i=n-1;i>=0;i--){
         if(arr[i] > maxi){
@@ -18,8 +18,5 @@ int main(){
         scanf("%d",&arr[i]);
     }
     leadersInArray(arr,n);
-    for(int i=0;i<n;i++){
-        printf("%d ",arr[i]);
-    }
     
 }
