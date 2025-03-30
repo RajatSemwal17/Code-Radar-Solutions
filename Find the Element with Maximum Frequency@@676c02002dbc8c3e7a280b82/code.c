@@ -9,7 +9,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int hash[MAX];
+    int hash[MAX] = {0};
     for(int i=0;i<n;i++){
         hash[arr[i]]++;
     }
@@ -17,7 +17,7 @@ int main(){
     int maxiFreq = INT_MIN;
     for(int i=0;i<n;i++){
         if(hash[i]> maxiFreq){
-            // maxiFreq = hash[i];
+            maxiFreq = hash[i];
             maxi = arr[i];
         }
     }
