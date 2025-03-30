@@ -4,10 +4,10 @@ int replaceWithGreatest(int arr[], int n){
     int maxi = -1;
     for(int i = n-1 ; i>=0;i--){
         int temp = arr[i];
-        arr[i] = x;
+        arr[i] = maxi;
         
-        if(temp > x){
-            x = temp;
+        if(temp > maxi){
+            maxi = temp;
         }
     }
 }
