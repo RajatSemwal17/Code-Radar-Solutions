@@ -5,7 +5,7 @@
 int sort(int arr[],int n){
     int x;
     for(int i=0;i<n;i++){
-        x = i;
+        x = i+1;
         for(int j=i;j<n;j++){
             x = j;
         }
