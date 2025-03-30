@@ -2,10 +2,10 @@
 #include <limits.h>
 
 void MaxAndMin(int arr[],int n){
-    int min = INT_MIN;
+    int min = INT_MAX;
     int max = INT_MIN;
 
-    for(int i=1;i<n;i++){
+    for(int i=0;i<n;i++){
         if(arr[i]< min){
             min = arr[i];
         }
