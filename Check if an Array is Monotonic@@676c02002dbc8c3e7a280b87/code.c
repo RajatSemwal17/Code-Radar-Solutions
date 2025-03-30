@@ -30,5 +30,4 @@ int main(){
     if(a==1 || b==1){
         printf("YES");
     }
-    else printf("NO");
 }
