@@ -37,8 +37,8 @@ void pairWithMinDifference(int arr[],int n){
         int temp = a;
         a = b;
         b = temp;
-    }
     printf("%d %d",a,b);
+    }
 }
 
 int main(){
