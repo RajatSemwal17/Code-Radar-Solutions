@@ -62,7 +62,7 @@ int main(){
     scanf("%d",&n);
     int arr[n];
 
-    int visited[];
+    int visited[100];
     for(int i=0;i<n;i++){
         visited[i] = 0;
     }
