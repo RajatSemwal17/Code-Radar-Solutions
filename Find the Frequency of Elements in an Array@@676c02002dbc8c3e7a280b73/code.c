@@ -31,31 +31,46 @@
 
 
 #include<stdio.h>
+// #define MAX 100000
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int arr[n];
+//     for(int i=0;i<n;i++){
+//         scanf("%d",&arr[i]);
+//     }
+//     int hash[MAX] = {0};
+//     for(int i=0;i<n;i++){
+//         hash[arr[i]]++;
+//     }
+
+//     for (int i = 0; i < MAX; i++) {
+//         if (hash[i] > 0) {
+//             printf("%d %d\n", i, hash[i]);
+//         }
+//     }
+// }
+
+
+
+
+
+
 #define MAX 100000
 int main(){
     int n;
     scanf("%d",&n);
     int arr[n];
+
+    int visited[];
+    for(int i=0;i<n;i++){
+        visited[i] = 0;
+    }
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int hash[MAX] = {0};
-    for(int i=0;i<n;i++){
-        hash[arr[i]]++;
-    }
-
-    for (int i = 0; i < MAX; i++) {
-        if (hash[i] > 0) {
-            printf("%d %d\n", i, hash[i]);
-        }
-    }
+    
 }
-
-
-
-
-
-
 
 
 
