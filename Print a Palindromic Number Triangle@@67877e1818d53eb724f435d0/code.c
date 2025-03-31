@@ -13,7 +13,7 @@ int main() {
         // for(int cols=rows-1;cols>=1;cols--){
         //     printf("%d",cols);
         // }
-        for(int cols=2;cols<=i;cols++){
+        for(int cols=2;cols<=rows;cols++){
             printf("%d",cols);
         }
         printf("\n");
