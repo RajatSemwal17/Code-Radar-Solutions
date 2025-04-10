@@ -5,11 +5,13 @@ int main(){
     int arr[n];
    int count= 0; 
     int missing = -1;
+    int hash[20] = {0};
     for(int i=0;i<n;i++){
-        for(int j=i;j<n;j++){
-            if(arr[j] == i)count++;
-        }
-    if(count == 0) missing = i;
+        hash[arr[i]]++;
     }
+    for(int i=0;i<n;i++){
+        if(hash[i] == 0) missing = i;
+    }
+
     printf("%d",missing);
 }
