@@ -5,7 +5,7 @@ int main(){
     scanf("%d",&n);
     int arr[20];
     int missing = -1;
-    int hash[20] = {0};
+    int hash[21] = {0};
 
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
