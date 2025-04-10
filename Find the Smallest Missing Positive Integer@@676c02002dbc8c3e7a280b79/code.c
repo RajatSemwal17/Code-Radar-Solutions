@@ -13,7 +13,7 @@ int main(){
         hash[arr[i]] = 1;
     }
     for(int i=1;i<MAX;i++){
-        if(hash[i] == 0) printf("%d",i);
-        break;
+        if(hash[i] == 0){ printf("%d",i);
+        break;}
     }
 }
