@@ -3,9 +3,9 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int arr[20];
+    int arr[n];
     int missing = -1;
-    int hash[21] = {0};
+    int hash[n+1] = {0};
 
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
