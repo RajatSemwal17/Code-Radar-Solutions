@@ -6,7 +6,7 @@ int main(){
    int count= 0; 
     int missing = -1;
     for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+        for(int j=i;j<n;j++){
             if(arr[j] == i)count++;
         }
     if(count == 0) missing = i;
