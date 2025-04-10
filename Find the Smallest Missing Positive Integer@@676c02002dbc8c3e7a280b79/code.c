@@ -9,10 +9,10 @@ int main(){
 
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
-    }
-    for(int i=0;i<n;i++){
         hash[arr[i]]++;
     }
+    // for(int i=0;i<n;i++){
+    // }
     for(int i=0;i<n;i++){
         if(hash[i] == 0) missing = i;
         break;
