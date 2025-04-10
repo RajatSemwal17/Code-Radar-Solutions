@@ -9,11 +9,11 @@ int main(){
 
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
+        if(arr[i]>0 && arr[i]<MAX)
         hash[arr[i]] = 1;
     }
     for(int i=0;i<MAX;i++){
         if(hash[i] == 0) printf("%d",i);
         break;
     }
-
 }
