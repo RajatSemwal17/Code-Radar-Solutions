@@ -2,7 +2,7 @@
 int main(){
     int n;
     scanf("%d",&n);
-    int arr[];
+    int arr[20];
     int missing = -1;
     int hash[20] = {0};
 
